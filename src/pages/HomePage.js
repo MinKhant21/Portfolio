@@ -1,16 +1,18 @@
 import React  from "react";
 import NavPage from "../components/NavPage";
+import AboutPage from "./AboutPage";
 import SkillPage from "./SkillPage";
+import ProjectPage from "./ProjectPage";
 // import HeroPage from "./HeroPage";
-
+import photo from  "../assets/images/kaungminkhant.png"
 const HomePage = () => {
     return (
         
       <div>
             {/*NavBar*/}
             
-            <div className=" container mx-auto  h-screen flex lg:flex-row justify-between items-center md:flex-col  sm:flex-col">
-                <div className="w-1/2">
+            <div className=" container mx-auto  min-h-screen flex lg:flex-row justify-between items-center md:flex-col  flex-col">
+                <div className="w-1/2 container mx-auto ">
                     <p className="font-bold text-8xl from-stone-50 text-slate-200">
                         <span className="hover:text-slate-500 skew-y-12">M</span> <span> y, Myself & I</span>
                     </p>
@@ -28,14 +30,21 @@ const HomePage = () => {
                         Download Cv
                     </p>
                 </div>
-                <div className="w-1/2 h-screen flex justify-center items-center">
-                    <img src="https://www.dignited.com/wp-content/uploads/2022/08/top10lan.jpg" alt=""  className="rounded-full w-65"/>
+                <div className="w-1/2 md:flex justify-center items-center hidden  ">
+                    <div className="w-1/2 h-1/2 bg-center">
+                        <img src={photo} alt="photo"  className="rounded-full"/>
+                    </div>
                 </div>
             </div>
 
-            {/* Skills */}
-          
+            {/* About */}
 
+            <AboutPage/>
+
+           < SkillPage/>
+
+           <ProjectPage/>
+          
     </div>
 
     )

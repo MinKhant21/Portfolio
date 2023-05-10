@@ -22,7 +22,8 @@ const HeroPage = () => {
                     </p>
                 </div>
                 <div className="flex justify-center items-center">
-                    <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" width={200} className="rounded-3xl" alt="hello"/>
+                    
+                    <img src="./assets/images/kaungminkhant.heic" width={200} className="rounded-3xl" alt="hello"/>
                 </div>
             </div>
         </section>
