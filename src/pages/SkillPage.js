@@ -4,7 +4,7 @@ const SkillPage = () => {
     return (
         <>
            
-           <div className="w-full min-h-screen mt-5  md:container md:mx-auto md:px-3 ">
+           <div className="w-full scroll-smooth min-h-screen  container mx-auto px-3 ">
                <div className="md:flex md:justify-between items-center">
                <div className="container mx-auto px-3 md:w-1/2">
                     <h3 className="text-white font-serif font-bold  text-2xl mb-3 underline">EDUCATION & SKILLS</h3>

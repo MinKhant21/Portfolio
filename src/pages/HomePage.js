@@ -3,6 +3,7 @@ import NavPage from "../components/NavPage";
 import AboutPage from "./AboutPage";
 import SkillPage from "./SkillPage";
 import ProjectPage from "./ProjectPage";
+import ContactPage from "./ContactPage";
 // import HeroPage from "./HeroPage";
 import photo from  "../assets/images/kaungminkhant.png"
 const HomePage = () => {
@@ -44,6 +45,8 @@ const HomePage = () => {
            < SkillPage/>
 
            <ProjectPage/>
+
+           <ContactPage/>
           
     </div>
 
