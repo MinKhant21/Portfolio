@@ -1,17 +1,18 @@
-    const darkSwitchIcon = document.querySelector("#dark-switch-icon");
-    const darkSwitch = document.querySelector("#dark-switch")
-    const darkText = document.querySelector("#dark-text")
-    const darkChangeText = document.querySelector("#dark-text-change")
-    const html = document.documentElement;
-    let isDarkMode = false;
+const darkSwitchIcon = document.querySelector("#dark-switch-icon");
+const darkSwitch = document.querySelector("#dark-switch")
+const darkText = document.querySelector("#dark-text")
+const darkChangeText = document.querySelector("#dark-text-change")
+const html = document.documentElement;
+let isDarkMode = false;
 
-    // Switch theme function
-    const toggleTheme = () => {
-    isDarkMode = !isDarkMode;
-    switchTheme()
-}   
+// Switch theme function
+const toggleTheme = () => {
+    // isDarkMode = !isDarkMode;
+    // switchTheme()
+    console.log("okkk")
+}
 
-    const toDark = () => {
+const toDark = () => {
     darkSwitchIcon.classList.add('translate-x-full', 'rotate-[360deg]','bg-slate-900')
     darkSwitchIcon.innerHTML = `<i class="fa-solid fa-moon text-slate-100"></i>`
     darkChangeText.innerText = 'Dark'
@@ -23,7 +24,7 @@
     darkText.innerText = 'ON'
 }
 
-    const toLight = () => {
+const toLight = () => {
     darkSwitchIcon.classList.remove('translate-x-full', 'bg-slate-900')
     darkChangeText.innerText = 'Light'
     darkSwitch.classList.remove('bg-slate-100')
@@ -34,11 +35,11 @@
     darkText.innerText = 'FF'
     darkSwitchIcon.innerHTML = `<i class="fa-regular fa-sun"></i>`
     setTimeout(() => {
-    darkSwitchIcon.classList.remove('rotate-[360deg]')
-}, 200)
+        darkSwitchIcon.classList.remove('rotate-[360deg]')
+    }, 200)
 }
 
-    const switchTheme = () => {
+const switchTheme = () => {
     isDarkMode ? toDark() : toLight()
     // or
     // if (isDarkMode) {
@@ -49,17 +50,16 @@
 }
 
 
-    // If you do reload the webpage,
-    // doesn't change you choose theme.
-    // This `dataTheme` function save permentaly choose theme.
+// If you do reload the webpage,
+// doesn't change you choose theme.
+// This `dataTheme` function save permentaly choose theme.
 
-    const dataTheme = localStorage.getItem('data-theme')
+const dataTheme = localStorage.getItem('data-theme')
 
-    dataTheme === 'dark' ? toDark() : toLight();
-    // or
-    // if(dataTheme === 'dark') {
-    //     toDark()
-    // } else {
-    //     toLight()
-    // }
-
+dataTheme === 'dark' ? toDark() : toLight();
+// or
+// if(dataTheme === 'dark') {
+//     toDark()
+// } else {
+//     toLight()
+// }

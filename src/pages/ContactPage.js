@@ -47,7 +47,8 @@ class ContactPage extends React.Component {
                         </div>
                     </div>
                     <div className="mt-3" style={{ height: "50vh" }}>
-                        <iframe src="https://www.google.com/maps/place/Baho+Rd,+Yangon/@16.8087391,96.1275427,17z/data=!3m1!4b1!4m6!3m5!1s0x30c1eb3822a3d473:0x2e5aa07d0b7f68e1!8m2!3d16.8086328!4d96.1300848!16s%2Fg%2F11bvtfm3yg"  width="100%" height="100%" style={{ border:0 }} allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.354935189873!2d96.12754807562824!3d16.808739069215996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb3822a3d473%3A0x2e5aa07d0b7f68e1!2sBaho%20Rd%2C%20Yangon!5e0!3m2!1sen!2smm!4v1683907408202!5m2!1sen!2smm" width="100%" height="100%"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      
                     </div>
                 </div>
             </>
