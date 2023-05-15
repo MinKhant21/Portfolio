@@ -5,7 +5,7 @@ class AboutPage extends React.Component {
     render() {
         return (
             <>
-                <div className="w-full  min-h-screen container mx-auto px-3  scroll-smooth md:flex justify-around items-stretch">
+                <div className="w-full  min-h-screen container mx-auto px-3  scroll-smooth  md:flex justify-around items-stretch">
                     <div className=""> 
                         <img src={web} alt="" className="md:w-35 my-auto rounded-md mt-5 "/>
                     </div>
