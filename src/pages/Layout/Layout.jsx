@@ -4,6 +4,7 @@ import { Outlet, useLocation } from "react-router-dom"
 import { SwitchTransition , CSSTransition } from "react-transition-group"
 import './style.css'
 export default function Layout() {
+
   const location = useLocation();
   return (
     <>
