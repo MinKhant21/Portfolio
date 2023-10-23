@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import lightIcon from '../../assets/light.svg'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 export default function NavBar() {
     const [navBar, setNavbarActive] = useState(false);
 
@@ -22,19 +23,19 @@ const navbarHandler = () => {
                         </div>
                         </li>
                         <li className=''>
-                            <a href="" className=' hidden md:block font-sans font-semibold '>Home</a>
+                            <Link to={"/"} className=' hidden md:block font-sans font-semibold '>Home</Link>
                         </li>
                         <li className=''>
-                            <a  className='font-sans hidden md:block  font-semibold ' href="">About</a>
+                            <Link  className='font-sans hidden md:block  font-semibold ' to={"/about"}>About</Link>
                         </li>
                         <li className=''>
-                            <a  className='font-sans hidden md:block  font-semibold ' href="">Education</a>
+                            <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>Education</Link>
                         </li>
                         <li className=''>
-                            <a  className='font-sans hidden md:block  font-semibold ' href="">Experience</a>
+                            <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>Experience</Link>
                         </li>
                         <li className=''>
-                            <a  className='font-sans hidden md:block  font-semibold ' href="">Projects</a>
+                            <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>Projects</Link>
                         </li>
                         <li>
                             <div className="cusuor-pointer border p-2 bg-white rounded-lg ">
