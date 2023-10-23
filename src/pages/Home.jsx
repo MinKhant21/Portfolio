@@ -4,7 +4,7 @@ export default function Home() {
   return (
        <div className='h-[700px] flex justify-around items-center'>
           <div>
-              <h1>Kaung Min Khant</h1>
+              <h1 className=' font-sans text-4xl font-extrabold'>Kaung Min Khant</h1>
               <p>
                 Full Stack Developer
               </p>
