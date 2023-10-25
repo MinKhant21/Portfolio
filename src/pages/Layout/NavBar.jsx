@@ -35,7 +35,7 @@ const navbarHandler = () => {
                             <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>Experience</Link>
                         </li>
                         <li className=''>
-                            <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>Projects</Link>
+                            <Link  className='font-sans hidden md:block  font-semibold ' to={"/projects"}>Projects</Link>
                         </li>
                         <li>
                             <div className="cusuor-pointer border p-2 bg-white rounded-lg ">
