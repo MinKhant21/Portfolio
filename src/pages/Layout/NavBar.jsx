@@ -10,8 +10,7 @@ const navbarHandler = () => {
 };
   return (
     <>
-         <header className=' container mx-auto shadow-md mt-3 rounded-md'>
-
+         <header className='  shadow-md mt-3'>
             <div className="">
                 <div className="p-2 md:p-4">
                     <ul className='flex justify-around items-center'>
