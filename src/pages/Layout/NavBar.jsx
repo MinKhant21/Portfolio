@@ -28,7 +28,7 @@ const navbarHandler = () => {
                             <Link  className='font-sans hidden md:block  font-semibold ' to={"/about"}>About</Link>
                         </li>
                         <li className=''>
-                            <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>Education</Link>
+                            <Link  className='font-sans hidden md:block  font-semibold ' to={"/eduction"}>Education</Link>
                         </li>
                         <li className=''>
                             <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>Experience</Link>
@@ -55,7 +55,9 @@ const navbarHandler = () => {
                     "flex flex-col justify-start p-3 items-start text-center cursor-pointer absolute left-0 bg-teal-100  transition-all duration-1000 h-[90vh] w-full"}`}>
                 <li className="mb-2 text-lg">Home</li>
                 <li className="mb-2 text-lg">About</li>
-                <li className="mb-2 text-lg">Education</li>
+                <li className="mb-2 text-lg">
+                    <Link to={'/eduction'}>Education</Link>
+                </li>
                 <li className="mb-2 text-lg">Experience</li>
                 <li className="mb-2 text-lg">Projects</li>
                
