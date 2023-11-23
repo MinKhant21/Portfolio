@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react'
 import TypewriterComponent from 'typewriter-effect'
 import Photo from '../assets/images/kaungminkhant.png'
-import FaceBook from '../assets/social/facebook.svg'
+import FaceBook from '../assets/social/facebook.png'
+import GitHub from '../assets/social/github.png'
+import LinkIn from '../assets/social/linkin.png'
+import Laravel from '../assets/skills/laravel.png'
+import ReactIcon from '../assets/skills/react.png'
+import NodeJS from '../assets/skills/nodejs.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
   
@@ -44,24 +50,9 @@ export default function Home() {
                   className='mt-5'>
                     <p className=' text-slate-700 font-semibold'>FIND WITH ME</p>
                   <div className="mt-5 flex gap-5 items-center ">
-                    <div className=' w-[50px]  h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1'>
-                      <img src={FaceBook} width={"15px"} style={{
-                        top: "0",
-                        left: "0"
-                      }}  alt="" />
-                    </div>
-                    <div className=' w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1'>
-                      <img src={FaceBook} width={"15px"} style={{
-                        top: "0",
-                        left: "0"
-                      }}  alt="" />
-                    </div>
-                    <div className=' w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1'>
-                      <img src={FaceBook} width={"15px"} style={{
-                        top: "0",
-                        left: "0"
-                      }}  alt="" />
-                    </div>
+                      <img src={FaceBook} className=' w-[50px]  h-[50px] rounded-full bg-purple-600  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1'/>
+                      <img src={LinkIn} className=' object-fill w-[50px]  h-[50px]  p-2 rounded-full bg-blue-700 shadow-lg flex justify-center items-center hover:-translate-y-1'  alt="" />
+                      <img src={GitHub}  className=' bg-green-700 w-[50px] h-[50px] p-2  shadow-lg flex justify-center items-center hover:-translate-y-1 rounded-full' alt="" />
                   </div>
                   </div>
 
@@ -69,24 +60,9 @@ export default function Home() {
                   className='mt-5 '>
                     <p className=' text-slate-700 font-semibold'>BEST SKILL ON</p>
                   <div className="mt-5 flex gap-5 items-center ">
-                    <div className=' w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1 '>
-                      <img src={FaceBook} width={"15px"} style={{
-                        top: "0",
-                        left: "0"
-                      }}  alt="" />
-                    </div>
-                    <div className=' w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1'>
-                      <img src={FaceBook} width={"15px"} style={{
-                        top: "0",
-                        left: "0"
-                      }}  alt="" />
-                    </div>
-                    <div className=' w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1'>
-                      <img src={FaceBook} width={"15px"} style={{
-                        top: "0",
-                        left: "0"
-                      }}  alt="" />
-                    </div>
+                      <img src={Laravel} className=' rounded-full w-[60px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1' />
+                      <img src={ReactIcon} className='w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1 rounded-full'/>
+                      <img src={NodeJS} className=' rounded-full w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1' />
                   </div>
                   </div>
                </div>
