@@ -14,7 +14,7 @@ export default function NavBar() {
     },[])
     return (
         <>
-            <header className='  shadow-md'>
+            <header className={`shadow-md ${theme === 'light' ? 'bg-white' : ' bg-zinc-800'}`}>
                 <div className="">
                     <div className="p-2 md:p-4">
                         <ul className='flex justify-around items-center'>
@@ -26,19 +26,29 @@ export default function NavBar() {
                             </div>
                             </li>
                             <li className=''>
-                                <Link to={"/"} className=' hidden md:block font-sans font-semibold '>Home</Link>
+                                <Link to={"/"} className=' hidden md:block font-sans font-semibold '>
+                                    <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>Home</span>
+                                </Link>
                             </li>
                             <li className=''>
-                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/about"}>About</Link>
+                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/about"}>
+                                    <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>About</span>
+                                </Link>
                             </li>
                             <li className=''>
-                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/eduction"}>Education</Link>
+                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/eduction"}>
+                                    <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>Education</span>
+                                </Link>
                             </li>
                             <li className=''>
-                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>Experience</Link>
+                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>
+                                    <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>Experience</span>
+                                </Link>
                             </li>
                             <li className=''>
-                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/projects"}>Projects</Link>
+                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/projects"}>
+                                    <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>Projects</span>
+                                </Link>
                             </li>
                             <li>
                                 {
