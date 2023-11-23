@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import router from './router';
 import './index.css'
+import { ThemeContextProvider } from './contexts/ThemeContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <RouterProvider router={router}>
-    </RouterProvider>
+    <ThemeContextProvider>
+        <RouterProvider router={router}>
+        </RouterProvider>
+    </ThemeContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

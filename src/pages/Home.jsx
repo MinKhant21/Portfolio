@@ -6,8 +6,8 @@ import FaceBook from '../assets/social/facebook.svg'
 export default function Home() {
   
   return (
-       <section className='h-[700px] flex justify-center items-center'>
-          <div className='container flex justify-between'>
+       <section className=' h-screen  flex justify-center items-center'>
+          <div className='sm:hidden container flex justify-between '>
             <div >
               <span style={
                 {
@@ -111,7 +111,7 @@ export default function Home() {
                   </div>
                </div>
             </div>
-            <div className='sm:hidden bg-slate-400 '>
+            <div className='bg-slate-400 sm: '>
               <div className='h-[500px] w-[500px]  p-3 bg-slate-50 object-cover shadow-xl rounded-md ' >
                 <img src={Photo} alt="" style={{
                       top: "0",
