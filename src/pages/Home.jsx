@@ -8,32 +8,34 @@ import Laravel from '../assets/skills/laravel.png'
 import ReactIcon from '../assets/skills/react.png'
 import NodeJS from '../assets/skills/nodejs.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import useTheme from '../hook/useTheme'
 export default function Home() {
+
+  let {theme} = useTheme();
   
   return (
        <section className=' h-screen flex justify-between items-center '>
           <div className='container flex justify-between items-center space-x-3 px-10'>
             {/* Left Side */}
             <div>
-              <p style={{color:" var(--color-body-white)",fontWeight: "500"}}>WELCOME TO MY WORLD</p>
-              <p className='mt-10 mb-10 text-3xl font-extrabold md:text-5xl'>Hi , I'm 
+              <p style={{fontWeight: "500",marginBottom:"10px"}} className={`${theme === 'light' ? 'text-black' : "text-slate-600"}`}>WELCOME TO MY WORLD</p>
+              <p className=''>
+                <span className={` mt-10 mb-10 text-3xl font-extrabold md:text-5xl ${theme === 'light' ? 'text-black' : "text-slate-600"}`}>Hi , I'm</span> 
                 <span style = {
                     {color: "#FF014F"}
                   }
-                  className='text-3xl ml-4 md:text-6xl'
+                  className=' text-3xl ml-4 md:text-6xl  font-extrabold '
                   >
                   Kaung Min Khant
                 </span>
               </p>
-              <p  className=' font-extrabold text-3xl font-serif mb-6 md:text-5xl'>
+              <p  className={` mt-5 font-extrabold text-3xl font-serif mb-6 md:text-5xl ${theme === 'light'  ? 'text-black' : "text-slate-600"}`}>
                   <TypewriterComponent
                           options={{
                             strings:"a Full Stack Developer",
                             autoStart: true,
                             loop: true,
                           }}
-                        
                     />
               </p>
 
@@ -69,11 +71,8 @@ export default function Home() {
             </div>
             {/* Right Side */}
             <div className='hidden md:block'>
-              <div className=' h-[500px] w-[500px]  p-3 bg-slate-50 object-cover shadow-xl rounded-md ' >
-                <img src={Photo} alt="" style={{
-                      top: "0",
-                      left: "0"
-                }} />
+              <div className={`h-[500px] w-[500px]  p-3 ${theme === 'light' ? 'bg-slate-50' : "bg-black"} object-cover shadow-xl rounded-md `} >
+                <img src={Photo} />
               </div>
             </div>
           </div>
