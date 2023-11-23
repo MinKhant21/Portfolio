@@ -53,7 +53,6 @@ export default function NavBar() {
                                         <img  src={lightIcon} alt="" className="w-5 bg-white" style={{color:"white"}}  />
                                     </div>
                                 }
-                                
                             </li>
                         </ul>  
 
