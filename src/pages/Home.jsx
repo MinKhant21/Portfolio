@@ -14,7 +14,7 @@ export default function Home() {
   let {theme} = useTheme();
   
   return (
-       <section className=' h-screen flex justify-between items-center '>
+       <section className=' h-screen flex justify-center items-center  mx-auto '>
           <div className='container flex justify-between items-center space-x-3 px-10'>
             {/* Left Side */}
             <div>
