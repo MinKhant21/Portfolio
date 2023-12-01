@@ -70,9 +70,9 @@ export default function Home() {
                </div>
             </div>
             {/* Right Side */}
-            <div className='hidden md:block'>
-              <div className={`h-[500px] w-[500px]  p-3 ${theme === 'light' ? 'bg-slate-50' : "bg-black"} object-cover shadow-xl rounded-md `} >
-                <img src={Photo} />
+            <div className='hidden md:block '>
+              <div className={`h-[500px] w-[500px] rounded-full relative  p-3 ${theme === 'light' ? 'bg-slate-50' : "bg-black"}  shadow-xl  `} >
+                <img src={Photo} className='object-cover w-full h-full rounded-full   ' />
               </div>
             </div>
           </div>
