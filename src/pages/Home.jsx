@@ -14,8 +14,13 @@ export default function Home() {
   let {theme} = useTheme();
   
   return (
-       <section className=' h-screen flex justify-center items-center  mx-auto '>
-          <div className='container flex justify-between items-center space-x-3 px-10'>
+       <section className=' mim-h-screen md:h-screen py-10 flex justify-center items-center  mx-auto '>
+          <div className='container flex-row md:flex justify-between items-center space-x-3 px-10'>
+            <div className='block md:hidden mb-10'>
+              <div className={`h-[250px] w-[250px] rounded-full relative mx-auto  p-3 ${theme === 'light' ? 'bg-slate-50' : "bg-black"}  shadow-xl  `} >
+                <img src={Photo} className='object-cover w-full h-full rounded-full   ' />
+              </div>
+            </div>
             {/* Left Side */}
             <div>
               <p style={{fontWeight: "500",marginBottom:"10px"}} className={`${theme === 'light' ? 'text-black' : "text-slate-600"}`}>WELCOME TO MY WORLD</p>

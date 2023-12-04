@@ -21,7 +21,7 @@ export default function Layout() {
             <div className="container mx-auto mt-10 ">
                 <About/>
             </div>
-            <div className=" mx-auto mt-20 bg-gray-100">
+            <div className=" mt-20 bg-gray-100">
                 <Projects/>
             </div>
 
