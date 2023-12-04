@@ -7,6 +7,7 @@ import useTheme from '../../hook/useTheme'
 import Home from "../Home";
 import About from "../About";
 import Eduction from "../Eduction";
+import Projects from "../Projects";
 export default function Layout() {
   const {theme} = useTheme();
   const location = useLocation();
@@ -21,7 +22,7 @@ export default function Layout() {
                 <About/>
             </div>
             <div className=" mx-auto mt-20 bg-gray-100">
-                <Eduction/>
+                <Projects/>
             </div>
 
             {/*<SwitchTransition>*/}
