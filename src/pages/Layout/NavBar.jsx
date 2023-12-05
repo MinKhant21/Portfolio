@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import lightIcon from '../../assets/light.svg'
 import darkIcon from '../../assets/dark.svg'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { ThemeContext } from '../../contexts/ThemeContext';
 export default function NavBar() {
     const [navBar, setNavbarActive] = useState(false);
@@ -14,7 +14,7 @@ export default function NavBar() {
     },[])
     return (
         <>
-            <header className={`shadow-md ${theme === 'light' ? 'bg-white' : ' bg-zinc-800'}`}>
+            <header className={`shadow-md sticky top-0  ${theme === 'light' ? 'bg-white' : ' bg-zinc-800'}`}>
                 <div className="">
                     <div className="p-2 md:p-4">
                         <ul className='flex justify-around items-center'>
@@ -26,27 +26,46 @@ export default function NavBar() {
                             </div>
                             </li>
                             <li className=''>
-                                <Link to={"/"} className=' hidden md:block font-sans font-semibold '>
+                                <Link to={"/"} className=' hidden md:block font-sans font-semibold cursor-pointer' 
+                                    spy={true} 
+                                    smooth={true} 
+                                    offset={50} 
+                                    duration={500} >
                                     <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>Home</span>
                                 </Link>
                             </li>
                             <li className=''>
-                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/about"}>
+                                <Link  spy={true} 
+                                        smooth={true} 
+                                        offset={150} 
+                                        duration={500} 
+                                        className='font-sans hidden md:block  font-semibold cursor-pointer' to='about'>
                                     <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>About</span>
                                 </Link>
                             </li>
                             <li className=''>
-                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/eduction"}>
+                                <Link spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} className='font-sans hidden md:block  font-semibold cursor-pointer' to='eduction'>
                                     <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>Education</span>
                                 </Link>
                             </li>
                             <li className=''>
-                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/"}>
+                                <Link spy={true} 
+                                    smooth={true} 
+                                    offset={50} 
+                                    duration={500}  
+                                    className='font-sans hidden md:block  font-semibold cursor-pointer' to={"/"}>
                                     <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>Experience</span>
                                 </Link>
                             </li>
                             <li className=''>
-                                <Link  className='font-sans hidden md:block  font-semibold ' to={"/projects"}>
+                                <Link spy={true} 
+                                    smooth={true} 
+                                    offset={100} 
+                                    duration={500} 
+                                    className='font-sans hidden md:block  font-semibold cursor-pointer' to="projects">
                                     <span className={`${theme === 'light' ? 'text-black' : ' text-slate-200'}`}>Projects</span>
                                 </Link>
                             </li>

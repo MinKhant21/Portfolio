@@ -67,7 +67,7 @@ let projectslist = [
 export default function Projects() {
 
   return (
-      <>
+      <div >
           <h1 className='text-gray-700 text-xl text-center border-blue-700 mb-[4rem] font-extrabold pt-10'>Projects</h1>
             {/*211 Sport*/}
           <div className='md:flex sm:flex-row  mb-10 shrink-0 rounded-md shadow-lg mx-auto  justify-center md:w-[70rem] md:h-[15rem] bg-white'>
@@ -119,6 +119,6 @@ export default function Projects() {
                 </p>
             </div>
           </div>
-      </>
+      </div>
   )
 }

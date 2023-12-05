@@ -15,13 +15,13 @@ export default function Layout() {
     <>
         <div className={`${theme == 'light' ? 'bg-white' : 'bg-black'}`} style={{width:"auto",height:"100%"}}>
             <NavBar/>
-            <div className=" mx-auto bg-gray-100">
+            <div className=" mx-auto bg-gray-100"  id='home'>
                 <Home/>
             </div>
-            <div className="container mx-auto mt-10 ">
+            <div className="about container mx-auto mt-10 " id='about'>
                 <About/>
             </div>
-            <div className=" mt-20 bg-gray-100">
+            <div className=" mt-20 bg-gray-100" id="projects">
                 <Projects/>
             </div>
 

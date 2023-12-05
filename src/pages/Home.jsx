@@ -17,8 +17,8 @@ export default function Home() {
        <section className=' mim-h-screen md:h-screen py-10 flex justify-center items-center  mx-auto '>
           <div className='container flex-row md:flex justify-between items-center space-x-3 px-10'>
             <div className='block md:hidden mb-10'>
-              <div className={`h-[250px] w-[250px] rounded-full relative mx-auto  p-3 ${theme === 'light' ? 'bg-slate-50' : "bg-black"}  shadow-xl  `} >
-                <img src={Photo} className='object-cover w-full h-full rounded-full   ' />
+              <div className={`h-[250px] w-[250px] rounded-full  mx-auto  p-3 ${theme === 'light' ? 'bg-slate-50' : "bg-black"}  shadow-xl  `} >
+                <img src={Photo} className=' w-full h-full rounded-full   ' />
               </div>
             </div>
             {/* Left Side */}
@@ -76,8 +76,8 @@ export default function Home() {
             </div>
             {/* Right Side */}
             <div className='hidden md:block '>
-              <div className={`h-[500px] w-[500px] rounded-full relative  p-3 ${theme === 'light' ? 'bg-slate-50' : "bg-black"}  shadow-xl  `} >
-                <img src={Photo} className='object-cover w-full h-full rounded-full   ' />
+              <div className={`h-[500px] w-[500px] rounded-full   p-3 ${theme === 'light' ? 'bg-slate-50' : "bg-black"}  shadow-xl  `} >
+                <img src={Photo} className='object-cover  w-full h-full rounded-full   ' />
               </div>
             </div>
           </div>
