@@ -11,6 +11,20 @@ import Projects from "../Projects";
 export default function Layout() {
   const {theme} = useTheme();
   const location = useLocation();
+  const disableRightClick = (event) => {
+    event.preventDefault();
+  };
+  useEffect(() => {
+    const handleContextMenu = (event) => {
+      disableRightClick(event);
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
   return (
     <>
         <div className={`${theme == 'light' ? 'bg-white' : 'bg-black'}`} style={{width:"auto",height:"100%"}}>
