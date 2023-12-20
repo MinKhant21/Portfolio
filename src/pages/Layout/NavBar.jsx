@@ -14,7 +14,7 @@ export default function NavBar() {
     },[])
     return (
         <>
-            <header className={`shadow-md sticky top-0  ${theme === 'light' ? 'bg-white' : ' bg-zinc-800'}`}>
+            <header className={`shadow-md  top-0  ${theme === 'light' ? 'bg-white' : ' bg-zinc-800'}`}>
                 <div className="">
                     <div className="p-2 md:p-4">
                         <ul className='flex justify-around items-center'>
