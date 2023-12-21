@@ -28,7 +28,7 @@ export default function Layout() {
              </CSSTransition>
           </SwitchTransition>
             </div>
-            <div className=" mt-20 bg-gray-100" id="projects">
+            <div className=" mt-20 " id="projects">
                 <Eduction/>
             </div>
             <div className=" mt-20 bg-gray-100" id="projects">
