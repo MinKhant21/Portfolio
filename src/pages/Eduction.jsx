@@ -4,7 +4,7 @@ export default function Eduction() {
   return (
     <>
 
-     <div className='container mx-auto flex justify-start gap-20 '>
+     <div className='container  flex justify-start gap-20 '>
         <div>
           <h1 className=' text-black text-center font-sans text-2xl font-bold mb-10'>Eduction</h1>
           <ul className="timeline timeline-vertical">
