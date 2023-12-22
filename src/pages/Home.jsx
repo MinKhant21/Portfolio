@@ -26,10 +26,8 @@ export default function Home() {
               <p style={{fontWeight: "500",marginBottom:"10px"}} className={`${theme === 'light' ? 'text-black' : "text-slate-600"}`}>WELCOME TO MY WORLD</p>
               <p className=''>
                 <span className={` mt-10 mb-10 text-3xl font-extrabold md:text-5xl ${theme === 'light' ? 'text-black' : "text-slate-600"}`}>Hi , I'm</span> 
-                <span style = {
-                    {color: "#FF014F"}
-                  }
-                  className=' text-3xl ml-4 md:text-6xl  font-extrabold '
+                <span 
+                  className=' text-3xl ml-4 md:text-6xl  font-extrabold text-purple-600 '
                   >
                   Kaung Min Khant
                 </span>
