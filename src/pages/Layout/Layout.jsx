@@ -16,6 +16,7 @@ export default function Layout() {
         <div  style={{width:"auto",height:"100%"}}>
             <NavBar/>
             <Home/>
+            <About/>
         </div>
     </>
   )
