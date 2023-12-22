@@ -13,9 +13,11 @@ const Filter = ({ activeGenre, setActiveGenre, setFiltered, popular }) => {
   
 
   return (
-    <div className="filter-container">
+    <div className="filter-container ">
+      <h1 className=" text-2xl text-black font-semibold text-center">PORTFOLIO</h1>
+      <div className=" flex justify-center mt-10"> 
       <button 
-        className={activeGenre === 0 ? "active" : ""}
+        className={activeGenre === 0 ? "active " : ""} 
         onClick={() => setActiveGenre(0)}
       >
        All
@@ -24,7 +26,7 @@ const Filter = ({ activeGenre, setActiveGenre, setFiltered, popular }) => {
         className={activeGenre === 35 ? "active" : ""}
         onClick={() => setActiveGenre(35)}
       >
-       Comedy
+       Social
       </button>
       <button 
         className={activeGenre === 28 ? "active" : ""}
@@ -32,6 +34,8 @@ const Filter = ({ activeGenre, setActiveGenre, setFiltered, popular }) => {
       >
         Action
       </button>
+      </div>
+      
     </div>
   )
 }

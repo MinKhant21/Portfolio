@@ -15,6 +15,7 @@ function Projects() {
     const movies = await response.json();
     setPopular(movies.results);
     setFiltered(movies.results);
+    console.log(movies)
   }
 
   useEffect(() => {
@@ -22,7 +23,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App h-screen">
     <Filter 
       popular={popular}
       setFiltered={setFiltered}
@@ -31,11 +32,12 @@ function Projects() {
     />
       <motion.div
         layout 
-        className="popular-movies"
+        className="popular-movies  md:mx-40 p-10"
       >
         <AnimatePresence>
           {filtered.map(movie => (
             <Movie 
+            className=""
               key={movie.id} 
               movie = {movie}
             />
