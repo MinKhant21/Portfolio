@@ -5,11 +5,11 @@ import  AboutImage from '../assets/images/aboutimage.webp'
 export default function About() {
   
   return (
-    <div className=' container mx-auto py-10 flex justify-start gap-72'>
-      <div className=' '>
+    <div className=' container  md:mx-auto py-10 flex-row  md:flex justify-start gap-72'>
+      <div className='mx-3 '>
         <img src={AboutImage} className=' h-[450px] w-[500px]  ' />
       </div>
-      <div>
+      <div className=' mx-3 mt-3'>
         <div>
           <h1 className='text-gray-700 text-xl  border-blue-700  font-extrabold' >About Me</h1>
           <p className=' max-w-lg mt-3'>
