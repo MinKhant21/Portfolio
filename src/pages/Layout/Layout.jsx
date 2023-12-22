@@ -8,6 +8,7 @@ import Home from "../Home";
 import About from "../About";
 import Eduction from "../Eduction";
 import Projects from "../Projects";
+import Skill from '../Skill'
 export default function Layout() {
   const {theme} = useTheme();
   const location = useLocation();
@@ -17,6 +18,7 @@ export default function Layout() {
             <NavBar/>
             <Home/>
             <About/>
+            <Skill/>
         </div>
     </>
   )
