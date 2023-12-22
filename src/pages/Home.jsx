@@ -52,7 +52,7 @@ export default function Home() {
                 </p>
 
                 {/* social Block */}
-               <div className=' flex gap-11 items-center mt-3'>
+               <div className=' flex-row md:flex gap-11 items-center mt-3'>
                 <div
                   className='mt-5'>
                     <p className=' text-slate-700 font-semibold'>FIND WITH ME</p>
@@ -63,14 +63,13 @@ export default function Home() {
                   </div>
                   </div>
 
-                  <div
-                  className='mt-5 '>
+                  <div className='mt-5 '>
                     <p className=' text-slate-700 font-semibold'>BEST SKILL ON</p>
-                  <div className="mt-5 flex gap-5 items-center ">
-                      <img src={Laravel} className=' rounded-full w-[60px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1' />
-                      <img src={ReactIcon} className='w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1 rounded-full'/>
-                      <img src={NodeJS} className=' rounded-full w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1' />
-                  </div>
+                    <div className="mt-5 flex gap-5 items-center ">
+                        <img src={Laravel} className=' rounded-full w-[60px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1' />
+                        <img src={ReactIcon} className='w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1 rounded-full'/>
+                        <img src={NodeJS} className=' rounded-full w-[50px] h-[50px]  p-2  shadow-lg flex justify-center items-center hover:-translate-y-1' />
+                    </div>
                   </div>
                </div>
             </div>
