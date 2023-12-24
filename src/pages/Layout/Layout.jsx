@@ -9,6 +9,7 @@ import About from "../About";
 import Eduction from "../Eduction";
 import Projects from "../Projects";
 import Skill from '../Skill'
+import Contant from '../Contant'
 export default function Layout() {
   const {theme} = useTheme();
   const location = useLocation();
@@ -19,7 +20,9 @@ export default function Layout() {
             <Home/>
             <About/>
             <Skill/>
-            <Projects/>
+              {/* <Projects/> */}
+            <Contant/>
+
         </div>
     </>
   )
