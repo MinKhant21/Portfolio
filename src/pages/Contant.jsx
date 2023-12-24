@@ -2,11 +2,11 @@ import React from 'react'
 import Hero from '../assets/images/kaungminkhant.png'
 export default function Contant() {
   return (
-    <div className='flex justify-around '>
+    <div className='md:flex justify-around '>
           <div className=' bg-slate-100'>
                <img src={Hero} alt="" />
           </div>
-          <div className=' w-1/2 '>
+          <div className=' w-3/4 mx-10 md:w-1/2 '>
                <h1 className=' text-3xl font-sans font-semibold my-10'>Contant Us</h1>
                <form class=" mx-auto">
                <div class="relative z-0 w-full mb-5 group">
