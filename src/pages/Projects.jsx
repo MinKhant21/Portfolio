@@ -31,8 +31,8 @@ function Projects() {
       setActiveGenre={setActiveGenre}
     />
       <motion.div
-        layout 
-        className="popular-movies  md:mx-40 p-10"
+        layout
+        className="popular-movies  md:mx-40 p-10 grid-rows-1 md:grid-cols-2 xl:grid-cols-4  "
       >
         <AnimatePresence>
           {filtered.map(movie => (
