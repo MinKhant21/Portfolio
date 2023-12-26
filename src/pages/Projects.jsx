@@ -23,7 +23,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="App h-screen">
+    <div className="App ">
     <Filter 
       popular={popular}
       setFiltered={setFiltered}

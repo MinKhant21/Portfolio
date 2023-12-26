@@ -20,7 +20,7 @@ export default function Layout() {
             <Home/>
             <About/>
             <Skill/>
-              {/* <Projects/> */}
+              <Projects/>
             <Contant/>
 
         </div>
