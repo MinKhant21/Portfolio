@@ -10,6 +10,8 @@ import Eduction from "../Eduction";
 import Projects from "../Projects";
 import Skill from '../Skill'
 import Contant from '../Contant'
+import Service from '../Service'
+import Footer from './Footer'
 export default function Layout() {
   const {theme} = useTheme();
   const location = useLocation();
@@ -20,9 +22,10 @@ export default function Layout() {
             <Home/>
             <About/>
             <Skill/>
-              <Projects/>
+            <Service/>
+            <Projects/>
             <Contant/>
-
+            <Footer/>
         </div>
     </>
   )
