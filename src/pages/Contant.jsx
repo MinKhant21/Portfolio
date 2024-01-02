@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../assets/images/kaungminkhant (1).png'
 export default function Contant() {
   return (
-    <div className='container   md:flex justify-center  items-center mx-auto h-screen'>
+    <div className='container   md:flex justify-center  items-center mx-auto max-h-screen'>
           <div className=' flex justify-center  items-center'>
                <img src={Hero} alt="" className='w-[400px] h-[400px] ' />
           </div>
