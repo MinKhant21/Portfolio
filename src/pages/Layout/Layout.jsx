@@ -23,10 +23,11 @@ export default function Layout() {
             <Home/>
             <About/>
             <Eduction/>
-            <Skill/>
             <Experience/>
+            <Skill/>
+
             <Projects/>
-            <Service/>
+            {/* <Service/> */}
             <Contant/>
             <Footer/>
         </div>
