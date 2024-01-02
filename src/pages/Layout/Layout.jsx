@@ -21,6 +21,7 @@ export default function Layout() {
             <NavBar/>
             <Home/>
             <About/>
+            <Eduction/>
             <Skill/>
             <Projects/>
             <Service/>

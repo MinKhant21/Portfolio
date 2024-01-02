@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import  AboutImage from '../assets/images/aboutimage.webp'
+import  AboutGIF from '../assets/images/abou.gif'
 export default function About() {
   
   return (
-    <div className=' container  md:mx-auto py-10 flex-row  md:flex justify-start gap-60'>
+    <div className=' container min-h-screen  md:mx-auto py-10 flex-row  md:flex items-center justify-start gap-60'>
       <div className='mx-3 '>
-        <img src={AboutImage} className=' h-[450px] w-[500px]  ' />
+        <img src={AboutGIF} className=' h-[450px] w-[500px]  ' />
       </div>
       <div className=' mx-3 mt-3'>
         <div>
@@ -25,9 +25,14 @@ export default function About() {
             <p>Kaung Min Khant</p>
           </div>
           <div>
-            <h1 className='text-gray-700 text-xl  border-blue-700  font-extrabold' >EMAIL</h1>
-            <p>kaungminkhant6889@gmail.com</p>
+            <h1 className='text-gray-700 text-xl  border-blue-700  font-extrabold' >PHONE</h1>
+            <a href='tel:+959402532566' className=' hover:text-blue-400'>+959402532566</a>
           </div>
+          <div>
+            <h1 className='text-gray-700 text-xl  border-blue-700  font-extrabold' >EMAIL</h1>
+            <a href='mailto:kaungminkhant6889@gmail.com'  className=' hover:text-blue-400'>kaungminkhant6889@gmail.com</a>
+          </div>
+         
         </div>
         <div className=' mt-3'>
           <h1 className='text-gray-700 text-xl  border-blue-700  font-extrabold' >EMPLOYMENT</h1>
