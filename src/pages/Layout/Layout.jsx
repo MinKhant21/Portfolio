@@ -22,8 +22,8 @@ export default function Layout() {
             <Home/>
             <About/>
             <Skill/>
-            <Service/>
             <Projects/>
+            <Service/>
             <Contant/>
             <Footer/>
         </div>

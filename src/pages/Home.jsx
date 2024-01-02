@@ -42,7 +42,7 @@ export default function Home() {
                     />
               </p>
 
-              <p className=' text-slate-600 text-lg max-w-md md:max-w-3xl' 
+              <p className=' text-slate-600 text-lg max-w-md md:max-w-3xl text-justify' 
                 >
                   I use animation as a third dimension by which to simplify experiences and 
                   kuiding thro each and every interaction. I’m not adding motion just to spruce 

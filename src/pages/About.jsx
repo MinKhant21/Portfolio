@@ -12,8 +12,11 @@ export default function About() {
       <div className=' mx-3 mt-3'>
         <div>
           <h1 className='text-gray-700 text-xl  border-blue-700  font-extrabold' >About Me</h1>
-          <p className=' max-w-3xl mt-3'>
-            I am a dynamic developer from the state of Wisconsin, fueled by an insatiable passion for crafting awe-inspiring websites and captivating emails. Armed with a knack for creativity and an adept ability to transform designs into seamless fully functional digital experiences. I bring a unique blend of vision and technical prowess to every project. My goal is to not only meet but exceed expectations, sculpting visually striking and intuitively responsive websites and emails that leave a lasting impression on users. Let my skills and expertise help you in the journey of turning concepts into captivating digital realities.
+          <p className=' max-w-3xl mt-3 text-justify'>
+            I am a <b><i>FULL-STACK DEVLOPER</i></b> from Myanmar.I have three years experiences in Software Development.
+            creativity and an adept ability to transform designs into seamless fully functional digital experiences. I bring a unique blend of vision and technical prowess to every projects.
+            Seeking to leverage broad development experience and
+            hands-on technical expertise in a challenging role as a Full Stack Developer.     
           </p>
         </div>
         <div className='mt-3 flex justify-start items-center gap-10'>
