@@ -16,6 +16,20 @@ import Experience from '../Experience'
 export default function Layout() {
   const {theme} = useTheme();
   const location = useLocation();
+  const disableRightClick = (event) => {
+    event.preventDefault();
+  };
+  useEffect(() => {
+    const handleContextMenu = (event) => {
+      disableRightClick(event);
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
   return (
     <>
         <div  style={{width:"auto",height:"100%"}}>
