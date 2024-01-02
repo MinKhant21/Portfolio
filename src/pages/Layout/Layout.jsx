@@ -12,6 +12,7 @@ import Skill from '../Skill'
 import Contant from '../Contant'
 import Service from '../Service'
 import Footer from './Footer'
+import Experience from '../Experience'
 export default function Layout() {
   const {theme} = useTheme();
   const location = useLocation();
@@ -23,6 +24,7 @@ export default function Layout() {
             <About/>
             <Eduction/>
             <Skill/>
+            <Experience/>
             <Projects/>
             <Service/>
             <Contant/>
