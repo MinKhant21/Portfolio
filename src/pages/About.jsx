@@ -19,7 +19,7 @@ export default function About() {
             hands-on technical expertise in a challenging role as a Full Stack Developer.     
           </p>
         </div>
-        <div className='mt-3 flex justify-start items-center gap-10'>
+        <div className='mt-3 flex flex-col gap-5 md:flex-row md:justify-start md:items-center  md:gap-10'>
           <div>
             <h1 className='text-gray-700 text-xl  border-blue-700  font-extrabold' >NAME</h1>
             <p>Kaung Min Khant</p>

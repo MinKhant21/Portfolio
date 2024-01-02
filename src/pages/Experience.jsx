@@ -11,7 +11,7 @@ export default function Experience() {
         Experience
       </h1>
      {/* EDKA */}
-      <div className=" mx-1 md:w-1/2 ">
+      <div className=" mx-1  md:w-1/2 ">
         <details className="  collapse  collapse-plus border border-base-300   shadow-md">
           <summary className="collapse-title text-lg md:text-xl font-medium    ">
             <div className=" flex justify-between items-center">
