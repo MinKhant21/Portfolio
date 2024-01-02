@@ -105,28 +105,26 @@ export default function NavBar() {
                                 <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About</a>
                             </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Education</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Experiences</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Skills</a>
+                            </li>
+
                             <li class="mb-1">
                                 <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Services</a>
-                            </li>
-                            <li class="mb-1">
-                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Pricing</a>
-                            </li>
-                            <li class="mb-1">
+                            </li><li class="mb-1">
                                 <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="mt-auto">
-                        <div class="pt-6">
-                            <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
-                            <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>
-                        </div>
-                        <p class="my-4 text-xs text-center text-gray-400">
-                            <span>Copyright © 2021</span>
-                        </p>
-                    </div>
+                    
                 </nav>
 	            </div>)
             }
