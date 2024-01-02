@@ -5,7 +5,7 @@ import  AboutGIF from '../assets/images/abou.gif'
 export default function About() {
   
   return (
-    <div className=' container min-h-screen  md:mx-auto py-10 flex-row  md:flex items-center justify-start gap-60'>
+    <div className=' container h-screen  md:mx-auto py-10 flex-row  md:flex items-center justify-start gap-60'>
       <div className='mx-3 '>
         <img src={AboutGIF} className=' h-[450px] w-[500px]  ' />
       </div>
