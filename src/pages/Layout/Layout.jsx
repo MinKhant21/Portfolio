@@ -9,11 +9,13 @@ import About from "../About";
 import Eduction from "../Eduction";
 import Projects from "../Projects";
 import Skill from '../Skill'
+import { motion, useScroll } from "framer-motion";
 import Contant from '../Contant'
 import Service from '../Service'
 import Footer from './Footer'
 import Experience from '../Experience'
 export default function Layout() {
+  const { scrollYProgress } = useScroll()
   const {theme} = useTheme();
   const location = useLocation();
   const disableRightClick = (event) => {
@@ -32,6 +34,10 @@ export default function Layout() {
   }, []);
   return (
     <>
+    <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
         <div  style={{width:"auto",height:"100%"}}>
             <NavBar/>
             <Home/>
