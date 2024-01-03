@@ -82,6 +82,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* padding-top: 10px; */
     padding: 20px;
     background-image: radial-gradient(
       rgba(0, 0, 0, 0) 1px,
