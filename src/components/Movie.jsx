@@ -1,5 +1,9 @@
 import { motion } from "framer-motion"
 import EyeIcon from '../assets/eye.svg'
+import FootBall from "../assets/projects/football.png";
+import Rcep from "../assets/projects/rcep.png";
+import ShweSport from "../assets/projects/smartJob.png";
+import SmartJob from "../assets/projects/shwesport.png";
 const Movie = ({ movie }) => {
   return (
     <motion.div
@@ -12,9 +16,9 @@ const Movie = ({ movie }) => {
     >
       
 
-    <div class="max-w-sm md:max-h-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-sm   md:h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-            <img class="rounded-t-lg" src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt="" />
+            <img class="rounded-t-lg  h-[200px] " src={movie.image} alt="" />
         </a>
         <div class="p-5">
             <a href="#">
