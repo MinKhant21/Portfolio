@@ -12,21 +12,29 @@ const projects = [
     id: 1,
     title: "Football Projects",
     image: FootBall,
+    url : 'https://211sport.com/?show=all&dates=2023-10-04&byTime=false&search=',
+    des : "FootBall Live Score Real Time"
   },
   {
     id: 2,
-    title: "Football Projects",
+    title: "Rcep Projects",
     image: Rcep,
+    url:'https://wap.rcepmall.net',
+    des : " Live Sales, Order Tracking, Notifications, and Delivery Systems"
   },
   {
     id: 3,
-    title: "Football Projects",
+    title: "ShweSport Projects",
     image: ShweSport,
+    url:'https://shwesports.com/',
+    des : "Live Stream Foot Ball And Forum System"
   },
   {
     id: 4,
-    title: "Football Projects",
+    title: "SmartJob Projects",
     image: SmartJob,
+    url:"https://172.105.113.91:810/",
+    des : "Job Search Platform"
   },
 ];
 function Projects() {

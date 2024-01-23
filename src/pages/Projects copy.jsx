@@ -1,87 +1,66 @@
-import React from 'react'
-import  {Link} from 'react-router-dom'
-import smartJob from '../assets/projects/smartJob.png'
-import football from '../assets/projects/football.png'
-import  eyeSvg from '../assets/eye.svg'
-import shwesport from '../assets/projects/shwesport.png'
-import rcep from '../assets/projects/rcep.png'
-import './Layout/style.css'
-const callouts = [
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import FootBall from "../assets/projects/football.png";
+import Rcep from "../assets/projects/rcep.png";
+import ShweSport from "../assets/projects/smartJob.png";
+import SmartJob from "../assets/projects/shwesport.png";
+import Filter from "../components/Filter";
+import Movie from "../components/Movie";
+import "../pages/style.css";
+const projects = [
   {
-    name: 'Desk and Office',
-    description: 'Work from home accessories',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    href: '#',
+    id: 1,
+    title: "Football Projects",
+    image: FootBall,
   },
   {
-    name: 'Self-Improvement',
-    description: 'Journals and note-taking',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-    href: '#',
+    id: 2,
+    title: "Football Projects",
+    image: Rcep,
   },
   {
-    name: 'Travel',
-    description: 'Daily commute essentials',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-    href: '#',
+    id: 3,
+    title: "Football Projects",
+    image: ShweSport,
   },
   {
-    name: 'Self-Improvement',
-    description: 'Journals and note-taking',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-    href: '#',
+    id: 4,
+    title: "Football Projects",
+    image: SmartJob,
   },
-  {
-    name: 'Travel',
-    description: 'Daily commute essentials',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-    href: '#',
-  },
-  {
-    name: 'Self-Improvement',
-    description: 'Journals and note-taking',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-    href: '#',
-  },
-]
-export default function Projects() {
-
+];
+function Projects() {
   return (
-      <>
-        <div className="bg-gray-100">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-              <h2 className="text-2xl font-bold text-gray-900">Projects</h2>
-
-              <div className="mt-6 space-y-10 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0 gap-10">
-                {callouts.map((callout) => (
-                  <div key={callout.name} className="group relative  ">
-                    <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                      <img
-                        src={callout.imageSrc}
-                        alt={callout.imageAlt}
-                        className="h-full w-full object-cover object-center"
-                      />
-                    </div>
-                    <h3 className="mt-6 text-sm text-gray-500">
-                      <a href={callout.href}>
-                        <span className="absolute inset-0" />
-                        {callout.name}
-                      </a>
-                    </h3>
-                    <p className="text-base font-semibold text-gray-900">{callout.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+    <div className="App my-10 min-h-screen ">
+      <h1 className="text-2xl text-black font-semibold text-center">
+        PORJECTS
+      </h1>
+      <div className=" flex justify-center items-center gap-10 mx-10 mt-4">
+        <div className=" p-6  w-[500px] h-[460px] rounded-xl shadow-xl my-4">
+          <img src={FootBall} alt="" />
+          <p className=" text-lg font-bold">Foot Ball Project</p>
+          <p className=" mt-3 mb-3">
+            FootBall Live Score and Suggestion ,Real Time Live Score Show Case
+          </p>
+          <span className=" cursor-pointer px-3 py-2 hover:bg-slate-500 bg-slate-400 rounded-2xl ">
+            View
+          </span>
         </div>
-      </>
-  )
+
+        <div className=" p-6  w-[500px] h-[460px]  rounded-xl shadow-xl my-4">
+          <img src={Rcep} alt="" />
+          <p className=" text-lg font-bold">Rcep Ecommerce Project</p>
+          <p className=" mt-3 mb-3">
+            Four crucial components that play a pivotal role in this process are
+            Live Sales, Order Tracking, Notifications, and Delivery Systems.
+          </p>
+          <span className=" cursor-pointer px-3 py-2 hover:bg-slate-500 bg-slate-400 rounded-2xl ">
+            View
+          </span>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+export default Projects;

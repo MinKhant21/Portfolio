@@ -88,7 +88,7 @@ export default function Experience() {
         </details>
       </div>
      {/* Secret */}
-      <div className=" mx-1 md:w-1/2 my-5">
+      {/* <div className=" mx-1 md:w-1/2 my-5">
         <details className="  collapse  collapse-plus border border-base-300   shadow-md">
           <summary className="collapse-title  md:text-xl font-medium    ">
             <div className=" flex justify-between items-center">
@@ -107,22 +107,7 @@ export default function Experience() {
                     <IoLocation />
                     <p>Yangon , Myanmar</p>
                   </div>
-                  {/* <div className=" flex items-center gap-1">
-                    <a
-                      href="https://edkamm.com/"
-                      target="_blank"
-                      className=" hover:text-blue-400"
-                    >
-                      <FaExternalLinkSquareAlt />
-                    </a>
-                    <a
-                      href="https://edkamm.com/"
-                      target="_blank"
-                      className=" hover:text-blue-400"
-                    >
-                      edkamm.com
-                    </a>
-                  </div> */}
+                  
                 </div>
                 <div className=" mx-6 max-w-xl">
                     <ul className=" list-disc">
@@ -158,7 +143,7 @@ export default function Experience() {
             </div>
           </div>
         </details>
-      </div>
+      </div> */}
      {/* ZED */}
       <div className=" mx-1 md:w-1/2 my-5">
         <details className="  collapse  collapse-plus border border-base-300   shadow-md">
