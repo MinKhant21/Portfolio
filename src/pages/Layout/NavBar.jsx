@@ -25,7 +25,7 @@ export default function NavBar() {
                 </a>
                 <label className="swap swap-rotate leading-none p-2 border rounded-full bg-amber-300 text-sm font-sans font-bold hover:bg-amber-400">
                     {/* this hidden checkbox controls the state */}
-                    <p>Download CV</p>
+                    <a href='https://drive.google.com/file/d/1Zxs6EcYtCYttIYzKHUgu5UQ_7GHvh3Pz/view?usp=drive_link'>Download CV</a>
                     {/* <input type="checkbox" className="hidden theme-controller" value="synthwave" /> */}
                     
                     {/* sun icon */}
