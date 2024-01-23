@@ -6,7 +6,7 @@ import Secret from "../assets/images/secret.jpeg";
 import ZED from "../assets/images/zed.jpeg";
 export default function Experience() {
   return (
-    <div className=" my-24 md:my-80 h-auto flex flex-col justify-center items-center ">
+    <div className=" my-24 md:my-80 h-auto flex flex-col justify-center items-center " id="experiences">
       <h1 className="  text-center font-sans font-extrabold text-2xl mb-10 underline underline-offset-8  decoration-sky-500/30">
         Experience
       </h1>

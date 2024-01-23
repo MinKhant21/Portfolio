@@ -4,7 +4,7 @@ export default function Skill() {
   return (
      <>
           
-          <div className='container   md:flex justify-center mx-auto h-auto md:mb-48 gap-10 items-center'>
+          <div className='container   md:flex justify-center mx-auto h-auto md:mb-48 gap-10 items-center' id='skills'>
                {/* FRONT END */}
                <div class=" md:w-1/3  mx-auto p-4 mt-16">
                     <h4 class="text-3xl md:text-5xl dark:text-white font-bold mb-6">FRONTEND</h4>

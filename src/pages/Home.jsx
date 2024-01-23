@@ -14,7 +14,7 @@ export default function Home() {
   let {theme} = useTheme();
   
   return (
-       <section className=' mim-h-screen md:h-screen py-10 flex justify-center items-center  mx-auto '>
+       <section className=' mim-h-screen md:h-screen py-10 flex justify-center items-center  mx-auto ' id='home'>
           <div className='container flex-row md:flex justify-between items-center space-x-3 px-10'>
             <div className='block md:hidden mb-10'>
               <div className={`h-[250px] w-[250px] rounded-full  mx-auto  p-3 ${theme === 'light' ? 'bg-white' : "bg-black"}  shadow-xl  `} >
