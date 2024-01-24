@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Eduction() {
   return (
-    <div className='max-h-screen flex flex-col justify-center' id='education'>
+    <div className='h-screen flex flex-col justify-center' id='education'>
       <h1 className='  text-center font-sans font-extrabold text-2xl mb-10 underline underline-offset-8  decoration-sky-500/30'>EDUCATION</h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-10">
         <li>
