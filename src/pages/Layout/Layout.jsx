@@ -22,17 +22,7 @@ export default function Layout() {
   const disableRightClick = (event) => {
     event.preventDefault();
   };
-  // useEffect(() => {
-  //   const handleContextMenu = (event) => {
-  //     disableRightClick(event);
-  //   };
-
-  //   document.addEventListener('contextmenu', handleContextMenu);
-
-  //   return () => {
-  //     document.removeEventListener('contextmenu', handleContextMenu);
-  //   };
-  // }, []);
+ 
   return (
     <>
       <motion.div
@@ -41,9 +31,7 @@ export default function Layout() {
       />
       <div style={{ width: "auto", height: "100%" }}>
         <NavBar />
-        <SeactionMotion>
           <Home />
-        </SeactionMotion>
         <SeactionMotion>
           <About />
         </SeactionMotion>
@@ -63,7 +51,7 @@ export default function Layout() {
           <Contant />
         </SeactionMotion>
         {/* <Service/> */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

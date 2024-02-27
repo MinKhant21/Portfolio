@@ -14,7 +14,7 @@ export default function Home() {
   let {theme} = useTheme();
   
   return (
-       <section className=' mim-h-screen md:h-screen py-10 flex justify-center items-center  mx-auto ' id='home'>
+       <section className=' bg-[#18181B] mim-h-screen md:h-screen py-10 flex justify-center items-center  mx-auto ' id='home'>
           <div className='container flex-row md:flex justify-between items-center space-x-3 px-10'>
             <div className='block md:hidden mb-10'>
               <div className={`h-[250px] w-[250px] rounded-full  mx-auto  p-3 ${theme === 'light' ? 'bg-white' : "bg-black"}  shadow-xl  `} >
@@ -23,16 +23,16 @@ export default function Home() {
             </div>
             {/* Left Side */}
             <div>
-              <p style={{fontWeight: "500",marginBottom:"10px"}} className={`${theme === 'light' ? 'text-black' : "text-slate-600"}`}>WELCOME TO MY WORLD</p>
+              <p style={{fontWeight: "500",marginBottom:"10px"}} className={`${theme === 'light' ? 'text-white' : "text-slate-600"}`}>WELCOME TO MY WORLD</p>
               <p className=''>
-                <span className={` mt-10 mb-10 text-3xl font-extrabold md:text-5xl ${theme === 'light' ? 'text-black' : "text-slate-600"}`}>Hi , I'm</span> 
+                <span className={` mt-10 mb-10 text-3xl font-extrabold md:text-5xl ${theme === 'light' ? 'text-[#C98A03]' : "text-slate-600"}`}>Hi , I'm</span> 
                 <span 
-                  className=' text-3xl ml-4 md:text-6xl  font-extrabold text-purple-600 '
+                  className=' text-3xl ml-4 md:text-6xl  font-extrabold text-[#C98A03] '
                   >
                   Kaung Min Khant
                 </span>
               </p>
-              <p  className={` mt-5 font-extrabold text-3xl font-serif mb-6 md:text-5xl ${theme === 'light'  ? 'text-black' : "text-slate-600"}`}>
+              <p  className={` mt-5 font-extrabold text-3xl font-serif mb-6 md:text-5xl ${theme === 'light'  ? 'text-[#C98A03]' : "text-slate-600"}`}>
                   <TypewriterComponent
                           options={{
                             strings:"a Full Stack Developer",
