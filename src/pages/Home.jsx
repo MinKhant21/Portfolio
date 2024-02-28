@@ -21,11 +21,11 @@ export default function Home() {
       <div className="container relative flex-row md:flex justify-between items-center space-x-3 ">
         <div className="block md:hidden mb-10">
           <div
-            className={`h-[250px] w-[250px] rounded-full  shadow-lg border border-[#42424b] mx-auto  p-3 ${
+            className={`h-[250px]  w-[250px] rounded-full  shadow-lg border border-[#42424b] mx-auto  p-3 ${
               theme === "light" ? "bg-[#18181B]" : "bg-black"
             }  shadow-xl  `}
           >
-            <img src={Photo} className=" w-full h-full rounded-full   " />
+            <img src={Photo} className=" w-full h-full rounded-full z-10   " />
           </div>
         </div>
         {/* Left Side */}

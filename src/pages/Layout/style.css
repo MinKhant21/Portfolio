@@ -203,4 +203,24 @@ body {
   top: 13px;
 }
   
-  
+.dropdownMenus{
+  position: absolute;
+  top: 4.5rem;
+  right: 1.5rem;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  background-color:#282D36;
+  color: white;
+  border: 1px solid gray;
+}
+.dropdownMenus::before{
+  content: "";
+  position: absolute;
+  top: -0.7rem;
+  right: 1.1rem;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+}
