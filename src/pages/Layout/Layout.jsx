@@ -29,19 +29,22 @@ export default function Layout() {
         className="progress-bar "
         style={{ scaleX: scrollYProgress }}
       />
-      <div style={{ width: "auto", height: "100%" }} className=" bg-[#e5e5e5]">
-        <NavBar />
-        <Home />
+      <div style={{ width: "auto", height: "100%" }} className=" bg-[#e5e5e5] " >
+       <NavBar />
+      
+       <Home />
+
         <SeactionMotion>
           <About />
         </SeactionMotion>
-        <SeactionMotion>
+      
+        {/* <SeactionMotion>
           <Eduction />
-        </SeactionMotion>
-        <SeactionMotion>
+        </SeactionMotion> */}
+        {/* <SeactionMotion>
           <Experience />
-        </SeactionMotion>
-        <SeactionMotion>
+        </SeactionMotion> */}
+        {/* <SeactionMotion>
           <Skill />
         </SeactionMotion>
         <SeactionMotion>
@@ -49,7 +52,7 @@ export default function Layout() {
         </SeactionMotion>
         <SeactionMotion>
           <Contant />
-        </SeactionMotion>
+        </SeactionMotion> */}
         {/* <Service/> */}
         {/* <Footer /> */}
       </div>

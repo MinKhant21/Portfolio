@@ -15,7 +15,7 @@ export default function Home() {
   return (
     // min-h-screen
     <section
-      className=" bg-[#18181B]  md:h-screen py-10 flex justify-center items-center  mx-auto "
+      className=" bg-[#18181B]  md:h-screen py-10 flex justify-center items-center  px-10 "
       id="home"
     >
       <div className="container relative flex-row md:flex justify-between items-center space-x-3 ">
