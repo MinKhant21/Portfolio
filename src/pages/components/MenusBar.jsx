@@ -7,8 +7,8 @@ export default function MenusBar() {
     icons.forEach((icon) => {
       icon.addEventListener("click", () => {
         icon.classList.toggle("open");
+        setisOpen(preState => !preState)
       });
-      setisOpen((preState) => !preState);
     });
     // Cleanup function
     return () => {
@@ -27,14 +27,14 @@ export default function MenusBar() {
         <span></span>
         <span></span>
       </div>
-      <ul className=" dropdownMenus">
-        <li className=" hover:bg-[#282D36] text-black py-1 px-3 rounded-xl">Home</li>
-        <li className=" hover:bg-[#282D36] text-black py-1 px-3 rounded-xl">About</li>
-        <li className=" hover:bg-[#282D36] text-black py-1 px-3 rounded-xl">
+      {isOpen ? <ul className=" dropdownMenus space-y-3">
+        <li className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">Home</li>
+        <li className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">About</li>
+        <li className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">
           Work Experiences
         </li>
-        <li className=" hover:bg-[#282D36] py-1 px-3 rounded-xl">Projects</li>
-      </ul>
+        <li className=" hover:bg-[#282D36] py-1 px-3 text-right rounded-xl cursor-pointer">Projects</li>
+      </ul> : ""}
       
     </>
   );

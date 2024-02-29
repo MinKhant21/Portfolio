@@ -15,7 +15,7 @@ export default function Home() {
   return (
     // min-h-screen
     <section
-      className=" bg-[#18181B]  md:h-[910px] py-10 flex justify-center items-center  mx-auto "
+      className=" bg-[#18181B]  md:h-screen py-10 flex justify-center items-center  mx-auto "
       id="home"
     >
       <div className="container relative flex-row md:flex justify-between items-center space-x-3 ">
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
         {/* Left Side */}
-        <div className=" w-full h-full ">
+        <div className=" ">
           <p
             style={{ fontWeight: "500", marginBottom: "10px" }}
             className={`${theme === "light" ? "text-white" : "text-white"}`}
@@ -61,11 +61,24 @@ export default function Home() {
               }}
             />
           </p>
-
-          <p className=" text-white text-lg max-w-md md:max-w-3xl text-justify">
-            I use animation as a third dimension by which to simplify
-            experiences and kuiding thro each and every interaction. I’m not
-            adding motion just to spruce things up, but doing it in ways that.
+          {/* As a dedicated Full Stack developer with over three years of
+            experience, I bring creativity and precision to my work, ensuring
+            seamless and visually appealing user experiences. Proficient in
+            HTML, CSS, and JavaScript Frameworks, I excel at translating design
+            concepts into responsive and interactive websites. My commitment to
+            staying abreast of emerging web technologies enables me to implement
+            innovative solutions for optimal performance across diverse browsers
+            and devices. With a focus on clean, efficient code, I collaborate
+            seamlessly with cross-functional teams. I thrive on problem-solving
+            and aim to surpass user expectations by delivering polished,
+            user-friendly interfaces. Eager to contribute to the dynamic realm
+            of web development, I stay updated on design trends and embrace
+            continuous learning. */}
+          <p className=" text-white mr-3  md:max-w-4xl text-justify">
+            Over three years of frontend and backend development expertise, specializing in
+            customized company portfolio websites and delivering over 10+ robust
+            web applications with React.js, Redux, and a commitment to
+            further growth in Node.js, Laravel, Express, MongoDB, and React Native.
           </p>
 
           {/* social Block */}
@@ -114,8 +127,8 @@ export default function Home() {
             <img src={Photo} className=' object-center w-full h-full object-cover ' />
            
             </div> */}
-        <div className="hidden md:flex justify-center items-center w-full h-auto">
-          <img src={Photo} className="absolute h-auto w-[925px] " />
+        <div className="hidden md:flex justify-center items-center">
+          <img src={Photo} className=" w-auto h-[895px] " />
         </div>
       </div>
     </section>
