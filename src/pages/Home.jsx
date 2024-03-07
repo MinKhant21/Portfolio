@@ -15,7 +15,7 @@ export default function Home() {
   return (
     // min-h-screen
     <section
-      className=" bg-[#18181B]  md:h-screen py-10 flex justify-center items-center  px-10 "
+      className=" bg-[#18181B]  md:max-h-screen py-10 flex justify-center items-center  px-10 "
       id="home"
     >
       <div className="container relative flex-row md:flex justify-between items-center space-x-3 ">
@@ -128,7 +128,7 @@ export default function Home() {
            
             </div> */}
         <div className="hidden md:flex justify-center items-center">
-          <img src={Photo} className=" w-auto h-[895px] " />
+          <img src={Photo} className=" w-auto h-screen " />
         </div>
       </div>
     </section>

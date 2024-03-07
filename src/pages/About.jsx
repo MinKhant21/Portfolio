@@ -31,8 +31,8 @@ export default function About() {
             </div>
             <div className="mt-6 md:mt-0">
               <ul className="list-disc space-y-10 text-justify">
-                <li>I have 11 years of experience in frontend development. In the earlier stages of my career, I built hundreds of company portfolio websites tailored to customer needs using HTML, CSS, jQuery, and WordPress</li>
-                <li>Starting in 2018, I transitioned to working with React.js, Next.js, and Redux, accumulating 2 years of experience in React.js, over 3 years in Next.js, and 2 years in TypeScript. I also have experience with Scss, Material-UI (@mui), Bootstrap, and Tailwind.</li>
+                <li>I have over 3 years of experience in Software development. In the earlier stages of my career, I built hundreds of company portfolio websites tailored to customer needs using HTML, CSS, jQuery, and WordPress</li>
+                <li>Starting in 2020, I transitioned to working with React.js, Next.js, and Redux, accumulating 2 years of experience in React.js, over 3 years in Node.js, and 2 years in TypeScript. I also have experience with Scss, Material-UI (@mui), Bootstrap, and Tailwind.</li>
                 <li>Throughout my career, I have developed multiple web applications and websites with a user-centric approach, always considering the user's perspective.</li>
                 <li>Currently, I'm actively pursuing professional development in Node.js, Express, and MongoDB, aiming to expand my expertise into backend development.</li>
               </ul>
