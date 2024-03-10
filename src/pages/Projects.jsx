@@ -41,42 +41,48 @@ export default function Projects() {
       <h1 className=" uppercase text-4xl   font-extrabold  text-center my-10  md:mt-30 md:mb-32">
         My PROFESSIONAL PROJECTS
       </h1>
-      <div className=" flex justify-center items-center gap-20">
-        <div>
-          <h1 className=" uppercase text-2xl   font-extrabold   my-10 ">
-            AUNGTHAMAR DI
-          </h1>
-          <div className="flex justify-start items-center gap-4">
-            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full">
+      <div className=" flex md:flex-row flex-col justify-center items-center gap-20 mx-10 md:mx-auto">
+        <div className=" flex flex-col items-start gap-10 ">
+            <h1 className=" uppercase text-xl md:text-2xl   font-extrabold ">
+              Aungthamardi Gold and Jewellery ERP System
+            </h1>
+            <p>As a Full Stack Developer</p>
+          <div className="flex flex-wrap  items-center gap-4 container">
+            <p className=" w-auto px-4 py-2 border border-black bg-[#D1D5DB] text-center rounded-full cursor-pointer hover:skew-y-3">
               Laravel
             </p>
-            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full">
+            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full  cursor-pointer hover:skew-y-3">
               Node Js
             </p>
-            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full">
+            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full  cursor-pointer hover:skew-y-3">
               TypeScript Js
             </p>
-            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full">
+            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full  cursor-pointer hover:skew-y-3">
               CI/CD
             </p>
-            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full">
+            <p className=" w-auto px-4 py-2 bg-[#D1D5DB] text-center rounded-full  cursor-pointer hover:skew-y-3">
               AWS
             </p>
           </div>
         </div>
-        <div className="">
-          <p className=" text-justify max-w-xl ">
-            In a digital realm, I embarked on an exciting endeavor—building an
-            advanced environmental management platform, empowered users to draw,
-            update, and delete areas on our map. They could select the analysis
-            type they needed and receive environmental analyses. I crafted a
-            robust platform, ensuring seamless navigation and user-friendliness.
-            I transformed complex tools like Leaflet into intuitive interfaces.
-            My expertise in CSS, HTML, and JavaScript enhanced the
-            platform&apos;s UI/UX, while AJAX calls ensured the smooth and
-            consistent flow of data.
-          </p>
-        </div>
+        <p className=" text-justify max-w-xl ">
+          Contributed to the design and implementation of the dashboard page,
+          ensuring an intuitive and user- friendly interface for efficient
+          system navigation. Developed and enhanced features related to gold
+          trading, gold saving bookkeeping, and gold sell and purchase
+          functionalities, providing comprehensive solutions for the jewelry ERP
+          system. Applied optimization techniques to enhance the efficiency of
+          backend queries, resulting in a 30% improvement. Addressed and
+          resolved bugs to ensure a stable and error-free system. Implemented
+          voucher, invoice, and bill functionalities, contributing to the
+          financial aspects of the ERP system and ensuring accurate
+          record-keeping. Managed the deployment and hosting of the Node.js
+          backend on AWS for production, offline, and staging environments.
+          Utilized PM2 for process management, ensuring system reliability.
+          Installed and configured local database servers, optimizing data
+          management and accessibility for the ERP system. Contributed to the
+          development of reporting
+        </p>
       </div>
     </div>
   );

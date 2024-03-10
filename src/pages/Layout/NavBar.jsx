@@ -9,8 +9,8 @@ export default function NavBar() {
   return (
     <>
       <div className="bg-[#18181B]  sticky top-0 z-10">
-        <nav className=" container p-3 md:p-8 text-white flex justify-between items-center mx-auto ">
-          <h1 className="text-[#C98A03] font-bold text-2xl">Kaung</h1>
+        <nav className=" container p-1 md:p-8 text-white flex justify-between items-center mx-auto ">
+          <h1 className="text-[#C98A03] font-bold text-2xl pl-5 md:pl-0">Kaung</h1>
           <div className="block md:hidden ">
             <MenusBar/>
           </div>
