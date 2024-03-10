@@ -39,19 +39,20 @@ export default function Layout() {
         <SeactionMotion>
           <Experience />
         </SeactionMotion>
-        <SeactionMotion>
+        {/* <SeactionMotion>
           <Eduction />
-        </SeactionMotion>
+        </SeactionMotion> */}
         {/* <SeactionMotion>
           <Skill />
-        </SeactionMotion>
+        </SeactionMotion> */}
+
         <SeactionMotion>
           <Projects />
         </SeactionMotion>
-        <SeactionMotion>
+        {/* <SeactionMotion>
           <Contant />
-        </SeactionMotion> */}
-        {/* <Service/> */}
+        </SeactionMotion>
+        <Service/> */}
         {/* <Footer /> */}
       </div>
     </>
