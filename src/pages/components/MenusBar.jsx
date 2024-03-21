@@ -32,11 +32,15 @@ export default function MenusBar() {
         <li  className=" ">
           <a href="#home" className="hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">Home</a>
         </li>
-        <li  className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">About</li>
-        <li  className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">
-          <a href="#">Work Experiences</a>
+        <li  >
+        <a className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer" href="#about">About</a>
+          </li>
+        <li >
+        <a className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer" href="#WorkExperiences">Work Experiences</a>
         </li>
-        <li  className=" hover:bg-[#282D36] py-1 px-3 text-right rounded-xl cursor-pointer">Projects</li>
+        <li  >
+        <a  className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer"  href="#Projects">Projects</a>
+        </li>
       </ul> : ""}
       
     </>
