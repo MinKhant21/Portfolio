@@ -22,14 +22,14 @@ export default function Layout() {
   const disableRightClick = (event) => {
     event.preventDefault();
   };
-
+ 
   return (
     <>
       <motion.div
         className="progress-bar "
         style={{ scaleX: scrollYProgress }}
       />
-      <div style={{ width: "auto", height: "100%" }} className=" bg-[#e5e5e5] ">
+      <div className=" bg-[#e5e5e5] ">
         <NavBar />
         <Home />
         <SeactionMotion>
@@ -53,7 +53,7 @@ export default function Layout() {
           <Contant />
         </SeactionMotion>
         <Service/> */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

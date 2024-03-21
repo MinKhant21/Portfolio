@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function MenusBar() {
   let [isOpen, setisOpen] = useState(false);
@@ -28,12 +29,14 @@ export default function MenusBar() {
         <span></span>
       </div>
       {isOpen ? <ul className=" dropdownMenus space-y-3">
-        <li className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">Home</li>
-        <li className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">About</li>
-        <li className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">
-          Work Experiences
+        <li  className=" ">
+          <a href="#home" className="hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">Home</a>
         </li>
-        <li className=" hover:bg-[#282D36] py-1 px-3 text-right rounded-xl cursor-pointer">Projects</li>
+        <li  className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">About</li>
+        <li  className=" hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">
+          <a href="#">Work Experiences</a>
+        </li>
+        <li  className=" hover:bg-[#282D36] py-1 px-3 text-right rounded-xl cursor-pointer">Projects</li>
       </ul> : ""}
       
     </>

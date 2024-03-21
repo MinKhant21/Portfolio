@@ -82,27 +82,9 @@ body {
     font-size: 18px;
   } */
   
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    /* padding-top: 10px; */
-    padding: 20px;
-    background-image: radial-gradient(
-      rgba(0, 0, 0, 0) 1px,
-      var(--background) 1px
-    );
-    background-size: 4px 4px;
-    backdrop-filter: blur(3px);
-    font-size: 14px;
-    line-height: 14px;
-  }
   
-  footer::before {
+  
+  /* footer::before {
     display: block;
     content: "";
     position: absolute;
@@ -112,16 +94,16 @@ body {
     height: 1px;
     background: var(--accent);
     opacity: 0.2;
-  }
+  } */
   
-  footer svg {
+  /* footer svg {
     margin-right: 20px;
   }
-  
-  footer a {
+   */
+  /* footer a {
     text-decoration: none;
     color: var(--accent);
-  }
+  } */
   
   code {
     font-family: input-mono, monospace;

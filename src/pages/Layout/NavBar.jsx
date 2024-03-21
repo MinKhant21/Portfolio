@@ -15,13 +15,18 @@ export default function NavBar() {
             <MenusBar/>
           </div>
           <ul className="hidden   md:flex items-center space-x-10">
-            <li className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer">Home</li>
-            <li className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer">About</li>
-            <li className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer">
-              Work Experiences
+            <li className="">
+          <a href="#home" className="hover:bg-[#282D36] text-white  text-right py-1 px-3 rounded-xl cursor-pointer">Home</a>
+
             </li>
-            <li className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer">
-              Projects
+            <li className="">
+              <a className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer" href="#about">About</a>
+            </li>
+            <li className="">
+              <a className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer" href="#WorkExperiences">Work Experiences</a>
+            </li>
+            <li className=" ">
+              <a  className=" hover:bg-[#282D36] py-1 px-3 rounded-xl cursor-pointer"  href="#Projects">Projects</a>
             </li>
          
           </ul>
