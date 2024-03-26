@@ -4,7 +4,7 @@ import AboutGIF from "../assets/images/abou.gif";
 export default function About() {
   return (
     <div id="about" className=" w-auto md:min-h-screen container   md:mx-auto py-10  px-10">
-        <h1 className=" text-4xl  uppercase font-extrabold mt-10   md:mt-52 md:mb-32 md:text-center text-clip">Professional Background and Skillset</h1>
+        <h1  className=" text-4xl  uppercase font-extrabold mt-10   md:mt-52 md:mb-32 md:text-center text-clip">Professional Background and Skillset</h1>
 
         <div className=" flex-row md:flex justify-between gap-40 mt-24 ">
             <div className=" space-y-10">

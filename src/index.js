@@ -4,6 +4,7 @@ import { RouterProvider } from 'react-router-dom';
 import router from './router';
 import './index.css'
 import { ThemeContextProvider } from './contexts/ThemeContext';
+import './setupTests'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <ThemeContextProvider>
