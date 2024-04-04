@@ -11,22 +11,22 @@ export default function About() {
               <div className=" flex items-center gap-10">
                   <p>Name</p>
                   <p>:</p>
-                  <p>Kaung Min Khant</p>
+                  <p className=" text-sm md:text-md">Kaung Min Khant</p>
               </div>
               <div className=" flex items-center gap-9">
                   <p>Phone</p>
                   <p>:</p>
-                  <p>+959402532566</p>
+                  <p className=" text-sm md:text-md">+959402532566</p>
               </div>
               <div className=" flex items-center gap-10">
                   <p>Email</p>
                   <p>:</p>
-                  <p>kaungminkhant.dev.mm@gmail.com</p>
+                  <p className=" text-sm md:text-md">kaungminkhant.dev.mm@gmail.com</p>
               </div>
               <div className=" flex items-center gap-4">
                   <p>Address</p>
                   <p>:</p>
-                  <p className=" pl-7">Mandalay,Myanmar</p>
+                  <p className=" pl-7  text-sm md:text-md">Mandalay,Myanmar</p>
               </div>
             </div>
             <div className="mt-6 md:mt-0">
