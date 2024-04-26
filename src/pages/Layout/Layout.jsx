@@ -29,12 +29,12 @@ export default function Layout() {
         className="progress-bar "
         style={{ scaleX: scrollYProgress }}
       />
-      <div className=" bg-[#e5e5e5] ">
+      <div className=" bg-[#030014]  ">
         <NavBar />
         <Home />
-        <SeactionMotion>
+        {/* <SeactionMotion> */}
           <About />
-        </SeactionMotion>
+        {/* </SeactionMotion> */}
         
         <SeactionMotion>
           <Experience />

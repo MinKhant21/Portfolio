@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import EyeIcon from '../assets/eye.svg'
+import { motion } from "framer-motion";
+import EyeIcon from "../assets/eye.svg";
 import FootBall from "../assets/projects/football.png";
 import Rcep from "../assets/projects/rcep.png";
 import ShweSport from "../assets/projects/smartJob.png";
@@ -14,28 +14,45 @@ const Movie = ({ movie }) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      
-
-    <div class="max-w-sm   md:h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div class=" w-[420px] md:w-[400px] bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
         <a href="#">
-            <img class="rounded-t-lg  h-[240px] " src={movie.image} alt="" />
-        </a>
-        <div class="p-5 min-w-sm">
-            <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{movie.title}</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 text-justify   dark:text-gray-400">{movie.des}</p>
-        
-            <a href={movie.url} target="_blank" className=" cursor-pointer px-3 py-2 hover:bg-slate-500 bg-purple-500 text-white rounded-2xl ">
+          <img
+            src={movie.image}
+            alt="Product"
+            class="h-80 w-[420px] md:w-[400px] object-cover rounded-t-xl"
+          />
+          <div class="px-4 py-3 w-[420px] md:w-[400px]">
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              {movie.position}
+            </span>
+            <p class="text-lg font-bold text-black truncate block capitalize">
+              {movie.title}
+            </p>
+            <p class="text-lg font-semibold text-black cursor-auto my-3">
+              {movie.des}
+            </p>
+            <div className="flex justify-between items-center">
+              <div className=" flex items-center gap-3">
+                {movie.language.map((language) => (
+                  <div className="badge badge-neutral text-white font-sans py-2">
+                    {language}
+                  </div>
+                ))}
+            
+              </div>
+              <a href={movie.url} target="_blank" className=" cursor-pointer px-3 py-2 hover:bg-slate-500 bg-purple-500 text-white rounded-2xl ">
             View
           </a>
-        </div>
-    </div>
+            </div>
+            
+          </div>
+        </a>
+      </div>
 
       {/* <h2 className=" text-md font-sans font-bold my-5">{movie.title}</h2>
       <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} className=" w-full h-full" alt="" /> */}
     </motion.div>
-  )
-}
+  );
+};
 
-export default Movie
+export default Movie;

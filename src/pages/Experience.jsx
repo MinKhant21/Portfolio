@@ -7,7 +7,7 @@ import ZED from "../assets/images/zed.jpeg";
 export default function Experience() {
   return (
     <>
-      <div className=" bg-[#18181B] min-h-screen flex flex-col justify-center items-center    text-white " id="WorkExperiences">
+      <div className=" bg-[#030014] min-h-screen flex flex-col justify-center items-center    text-white " id="WorkExperiences">
         <h1 className=" uppercase text-4xl   font-extrabold  text-center my-10  md:mt-30 md:mb-32">
           My PROFESSIONAL Journey
         </h1>

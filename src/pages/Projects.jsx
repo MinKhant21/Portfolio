@@ -12,29 +12,40 @@ const projects = [
     id: 1,
     title: "Football Projects",
     image: FootBall,
+    position : "Full Stack Developer",
     url : 'https://211sport.com/?show=all&dates=2023-10-04&byTime=false&search=',
-    des : "FootBall Live Score Real Time"
+    des : "FootBall Live Score Real Time",
+    language : ['Vue JS',"Laravel"]
   },
   {
     id: 2,
     title: "Rcep Projects",
     image: Rcep,
+    position : "Full Stack Developer",
     url:'https://wap.rcepmall.net',
-    des : "Ecommerce Systems"
+    des : "Ecommerce Systems",
+    language : ['Angular JS',"Laravel"]
+
   },
   {
     id: 3,
     title: "SmartJob Projects",
     image: SmartJob,
+    position : "Full Stack Developer",
     url:"https://172.105.113.91:810/",
-    des : "Job Search Platform"
+    des : "Job Search Platform",
+    language : ['React JS',"NodeJS"]
+
   },
   {
     id: 4,
     title: "ShweSport Projects",
     image: ShweSport,
+    position : "Full Stack Developer",
     url:'https://shwesports.com/',
-    des : "Live Stream Foot Ball And Forum System"
+    des : "Live Stream & Forum System",
+    language : ['React JS',"Laravel"]
+
   },
   
 ];
@@ -49,16 +60,20 @@ function Projects() {
   return (
     
     <div className="App min-h-screen pt-20" id="Projects">
+        <h1  className=" text-4xl  uppercase font-extrabold mt-10 text-white   md:mb-32 md:text-center text-clip text-center">Projects</h1>
+
       <Filter
         popular={popular}
         setFiltered={setFiltered}
         activeGenre={activeGenre}
         setActiveGenre={setActiveGenre}
       />
+
       <motion.div
         layout
-        className="popular-movies  md:mx-40 p-10 grid-rows-1 md:grid-cols-2 xl:grid-cols-4  "
+        className="popular-movies  w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
       >
+
         <AnimatePresence>
         {/* <div class=" container flex flex-col md:grid md:grid-cols-4 md:mx-auto mx-5 gap-3"> */}
           {filtered.map(movie => (

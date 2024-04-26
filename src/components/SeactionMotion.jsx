@@ -7,7 +7,7 @@ export default function SeactionMotion({ children }) {
   return (
     <section ref={ref}>
       <span
-      className="block transform -translate-x-100 opacity-0"
+      className="block bg-[#030014] transform -translate-x-100 opacity-0"
         style={{
           transform: isInView ? "none" : "translateX(-200px)",
           opacity: isInView ? 1 : 0,
