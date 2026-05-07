@@ -24,7 +24,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1]"
+            className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1] text-slate-900 dark:text-white"
           >
             Hi, I'm <span className="text-gradient block sm:inline">Kaung Min Khant</span>
           </motion.h1>
@@ -33,10 +33,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg sm:text-xl md:text-2xl text-slate-400 max-w-3xl mb-10 leading-relaxed px-2"
+            className="text-lg sm:text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mb-10 leading-relaxed px-2"
           >
-            A <span className="text-white font-medium">Senior Full Stack Developer</span> with 5+ years of experience building 
-            <span className="text-white font-medium"> scalable microservices</span> and high-performance real-time applications. 
+            A <span className="text-slate-900 dark:text-white font-medium">Senior Full Stack Developer</span> with 5+ years of experience building 
+            <span className="text-slate-900 dark:text-white font-medium"> scalable microservices</span> and high-performance real-time applications. 
             Passionate about clean architecture and cloud-native solutions.
           </motion.p>
 
@@ -55,7 +55,7 @@ const Hero = () => {
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 rounded-full glass-card hover:bg-white/10 text-white font-semibold transition-all flex items-center justify-center"
+              className="px-8 py-4 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-900 dark:text-white font-semibold transition-all flex items-center justify-center"
             >
               Contact Me
             </a>
@@ -67,13 +67,13 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.5 }}
             className="mt-12 md:mt-16 flex items-center gap-4 sm:gap-6"
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-white/10 text-slate-400 hover:text-white transition-all">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-all">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-white/10 text-slate-400 hover:text-white transition-all">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-all">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:kaungminkhant.dev.mm@gmail.com" className="p-3 rounded-full glass-card hover:bg-white/10 text-slate-400 hover:text-white transition-all">
+            <a href="mailto:kaungminkhant.dev.mm@gmail.com" className="p-3 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-all">
               <Mail size={24} />
             </a>
           </motion.div>

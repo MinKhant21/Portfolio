@@ -33,15 +33,15 @@ const Experience = () => {
     <section id="experience" className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Experience</h2>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             A journey of building impactful solutions and leading technical excellence.
           </p>
         </div>
 
         <div className="relative">
           {/* Vertical Line - Centered on Desktop, Left on Mobile */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2" />
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-slate-200 dark:bg-white/10 -translate-x-1/2" />
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -55,29 +55,29 @@ const Experience = () => {
                 }`}
               >
                 {/* Dot on the line */}
-                <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-[#030712] -translate-x-1/2 z-10" />
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-slate-50 dark:border-[#030712] -translate-x-1/2 z-10" />
 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2 pl-12 md:pl-0 md:px-12">
                   <div className="glass-card p-6 sm:p-8 rounded-2xl hover:border-blue-500/30 transition-all group">
                     <div className={`flex flex-col gap-2 mb-4 ${index % 2 === 0 ? 'md:items-end md:text-right' : ''}`}>
                       <div className={`flex items-center gap-3 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                        <Briefcase size={18} className="text-blue-400 shrink-0" />
-                        <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                        <Briefcase size={18} className="text-blue-600 dark:text-blue-400 shrink-0" />
+                        <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                           {exp.role}
                         </h3>
                       </div>
-                      <div className={`flex flex-wrap items-center gap-2 text-slate-400 text-xs sm:text-sm ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                      <div className={`flex flex-wrap items-center gap-2 text-slate-500 dark:text-slate-400 text-xs sm:text-sm ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                         <div className="flex items-center gap-1">
                           <Calendar size={14} />
                           <span>{exp.period}</span>
                         </div>
                         <span className="hidden sm:inline mx-1">•</span>
-                        <span className="text-blue-400 font-medium">{exp.company}</span>
+                        <span className="text-blue-600 dark:text-blue-400 font-medium">{exp.company}</span>
                       </div>
                     </div>
 
-                    <p className={`text-sm sm:text-base text-slate-400 mb-6 leading-relaxed ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                    <p className={`text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-6 leading-relaxed ${index % 2 === 0 ? 'md:text-right' : ''}`}>
                       {exp.description}
                     </p>
 
@@ -85,11 +85,11 @@ const Experience = () => {
                       {exp.achievements.map((item, i) => (
                         <li 
                           key={i} 
-                          className={`text-slate-300 text-xs sm:text-sm flex items-start gap-3 ${
+                          className={`text-slate-700 dark:text-slate-300 text-xs sm:text-sm flex items-start gap-3 ${
                             index % 2 === 0 ? 'md:flex-row-reverse md:text-right' : ''
                           }`}
                         >
-                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-500 shrink-0" />
                           <span className="flex-1">{item}</span>
                         </li>
                       ))}

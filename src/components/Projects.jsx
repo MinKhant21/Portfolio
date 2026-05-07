@@ -34,8 +34,8 @@ const Projects = () => {
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Featured Projects</h2>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             A selection of complex applications I've architected and built.
           </p>
         </div>
@@ -67,14 +67,14 @@ const Projects = () => {
               </div>
               
               <div className="p-5 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">{project.title}</h3>
-                <p className="text-slate-400 text-xs sm:text-sm mb-6 line-clamp-2 leading-relaxed">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{project.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mb-6 line-clamp-2 leading-relaxed">
                   {project.description}
                 </p>
                 
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {project.tech.map((t) => (
-                    <span key={t} className="px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] sm:text-xs font-medium">
+                    <span key={t} className="px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-600/20 dark:border-blue-500/20 text-blue-600 dark:text-blue-400 text-[10px] sm:text-xs font-medium">
                       {t}
                     </span>
                   ))}

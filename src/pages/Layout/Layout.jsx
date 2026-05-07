@@ -14,9 +14,9 @@ export default function Layout() {
     <div className="relative min-h-screen">
       {/* Background Blobs */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-        <div className="absolute -top-[10%] -left-[10%] w-[70%] sm:w-[40%] h-[40%] bg-blue-500/10 blur-[80px] sm:blur-[120px] rounded-full" />
-        <div className="absolute top-[20%] -right-[10%] w-[60%] sm:w-[30%] h-[30%] bg-indigo-500/10 blur-[80px] sm:blur-[120px] rounded-full" />
-        <div className="absolute -bottom-[10%] left-[20%] w-[80%] sm:w-[50%] h-[50%] bg-purple-500/5 blur-[80px] sm:blur-[120px] rounded-full" />
+        <div className="absolute -top-[10%] -left-[10%] w-[70%] sm:w-[40%] h-[40%] bg-blue-600/10 dark:bg-blue-500/10 blur-[80px] sm:blur-[120px] rounded-full" />
+        <div className="absolute top-[20%] -right-[10%] w-[60%] sm:w-[30%] h-[30%] bg-indigo-600/10 dark:bg-indigo-500/10 blur-[80px] sm:blur-[120px] rounded-full" />
+        <div className="absolute -bottom-[10%] left-[20%] w-[80%] sm:w-[50%] h-[50%] bg-purple-600/5 dark:bg-purple-500/5 blur-[80px] sm:blur-[120px] rounded-full" />
       </div>
 
       <motion.div

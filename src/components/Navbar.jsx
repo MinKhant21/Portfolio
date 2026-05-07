@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -19,9 +20,9 @@ const Navbar = () => {
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex-shrink-0 font-bold text-xl tracking-tighter"
+            className="flex-shrink-0 font-bold text-xl tracking-tighter text-slate-900 dark:text-white"
           >
-            KMK<span className="text-blue-500">.</span>DEV
+            KMK<span className="text-blue-600 dark:text-blue-500">.</span>DEV
           </motion.div>
           
           <div className="hidden md:block">
@@ -30,7 +31,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-slate-300 hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {link.name}
                 </a>
@@ -38,19 +39,23 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-              <Github size={20} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-              <Linkedin size={20} />
-            </a>
+          <div className="hidden md:flex items-center space-x-6">
+            <ThemeToggle />
+            <div className="flex items-center space-x-4">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
+                <Github size={20} />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
+                <Linkedin size={20} />
+              </a>
+            </div>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-4">
+            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-300 hover:text-white"
+              className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-white"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -68,20 +73,20 @@ const Navbar = () => {
         >
           <div className="px-4 pt-2 pb-6 space-y-2">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-slate-300 hover:text-white block px-3 py-3 rounded-xl hover:bg-white/5 transition-all text-base font-medium"
-              >
-                {link.name}
-              </a>
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-white block px-3 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-white/5 transition-all text-base font-medium"
+                >
+                  {link.name}
+                </a>
             ))}
-            <div className="flex items-center gap-6 px-3 pt-4 border-t border-white/5">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+            <div className="flex items-center gap-6 px-3 pt-4 border-t border-slate-200 dark:border-white/5">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
                 <Linkedin size={24} />
               </a>
             </div>
