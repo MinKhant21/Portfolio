@@ -7,10 +7,14 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '375px',
+      },
+    },
   },
   daisyui: {
-    themes: ["winter"],
+    themes: ["dark"],
   },
   plugins: [
     require("daisyui"),
