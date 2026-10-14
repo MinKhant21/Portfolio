@@ -17,7 +17,7 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            Available for new opportunities
+            Full Stack Software Engineer at KBZ Bank
           </motion.div>
 
           <motion.h1
@@ -35,9 +35,9 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mb-10 leading-relaxed px-2"
           >
-            A <span className="text-slate-900 dark:text-white font-medium">Senior Full Stack Developer</span> with 5+ years of experience building 
-            <span className="text-slate-900 dark:text-white font-medium"> scalable microservices</span> and high-performance real-time applications. 
-            Passionate about clean architecture and cloud-native solutions.
+            A <span className="text-slate-900 dark:text-white font-medium">Full Stack Software Engineer</span> with 6 years of experience building
+            <span className="text-slate-900 dark:text-white font-medium"> web applications and internal enterprise systems</span>.
+            I work with JavaScript, TypeScript, Node.js, React, Vue.js, PHP, Laravel, microservices, and AWS. Based in Yangon.
           </motion.p>
 
           <motion.div
@@ -67,10 +67,10 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.5 }}
             className="mt-12 md:mt-16 flex items-center gap-4 sm:gap-6"
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-all">
+            <a href="https://github.com/MinKhant21" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-all">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-all">
+            <a href="https://www.linkedin.com/in/kaung-min-khant-224b8b327" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-all">
               <Linkedin size={24} />
             </a>
             <a href="mailto:kaungminkhant.dev.mm@gmail.com" className="p-3 rounded-full glass-card hover:bg-slate-100 dark:hover:bg-white/10 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-all">

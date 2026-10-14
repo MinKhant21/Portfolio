@@ -5,26 +5,59 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      role: 'Senior Full Stack Developer',
-      company: 'EDKA Digital',
-      period: '2021 - Present',
-      description: 'Leading the development of complex enterprise applications, focusing on infrastructure scalability and team leadership.',
+      role: 'Full Stack Software Engineer',
+      company: 'KBZ Bank',
+      period: 'March 2026 – Present · Yangon',
+      description: 'On-site full stack work on internal banking systems, payroll, and document search.',
       achievements: [
-        'Architected and implemented a distribution management system serving 10k+ active users.',
-        'Reduced infrastructure costs by 30% through optimized Kubernetes orchestration.',
-        'Mentored junior developers and established CI/CD best practices.',
-        'Implemented real-time data synchronization using WebSockets and Redis.'
+        'Built payroll services for bank-to-bank and bank-to-wallet transfers, and pay advance services, on a microservices architecture.',
+        'Integrated third-party enterprise APIs and defined API contracts for internal banking systems.',
+        'Built internal workflow applications with maker-checker approval, including a knowledge wiki and document search for DOC and PDF files.',
+        'Implemented LLM retrieval-augmented generation (RAG) with Amazon Bedrock and Bedrock Knowledge Bases, using Amazon S3 for document storage.',
+        'Delivered services on AWS with DynamoDB, EKS, EC2, and Lambda, and set up CI/CD pipelines.',
+        'Reviewed functional specification documents with business analysts and product teams and checked technical feasibility.',
+        'Built frontend interfaces from UI/UX designs and worked with cross-functional teams on code quality, security compliance, and system reliability.',
+      ]
+    },
+    {
+      role: 'Senior Full Stack Developer',
+      company: 'EDKA Digital Company Limited',
+      period: 'October 2023 – December 2025 · Mandalay · Remote',
+      description: 'Team lead for enterprise web applications, internal products, and client systems.',
+      achievements: [
+        'Acted as team lead: reviewed code, mentored junior developers, and trained and guided interns and juniors.',
+        'Set up Docker and CI/CD pipelines and provided infrastructure support for project environments.',
+        'Managed internal products as project manager, including a ticketing system, an internal payroll system, and KPI tracking and reporting.',
+        'Built a real-time ticker for Grand Royal, a mini ERP, a CMS, and an internal contract management system.',
+        'Engineered enterprise web applications with Node.js, PHP, React, Vue.js, and Laravel, using modular architecture for high-traffic systems.',
+        'Designed RESTful API specifications and microservice boundaries with solution architects, and integrated third-party services.',
+        'Diagnosed database and application bottlenecks, and introduced automated testing and test-driven development (TDD).',
       ]
     },
     {
       role: 'Full Stack Developer',
-      company: 'Aungthamardi',
-      period: '2019 - 2021',
-      description: 'Developed and maintained various internal systems and client-facing applications.',
+      company: 'Freelance',
+      period: 'February 2022 – August 2023 · Yangon · Remote',
+      description: 'Client applications from requirements gathering through deployment.',
       achievements: [
-        'Built a real-time trading platform with low-latency updates.',
-        'Integrated multiple third-party payment gateways and logistics services.',
-        'Modernized legacy PHP systems to Laravel, improving performance by 40%.'
+        'Built an internal sales application for Manulife.',
+        'Built the Aungmadi internal ERP system in collaboration with EDKA Digital.',
+        'Built the Stallion Distribution Management System.',
+        'Delivered client applications with React, Vue.js, TypeScript, Laravel, and Node.js.',
+        'Built serverless back-end services and RESTful APIs to reduce server infrastructure overhead.',
+        'Set up local and cloud Docker environments and shortened the path from development to production.',
+        'Built responsive interfaces and improved frontend performance, cross-browser compatibility, and SEO.',
+      ]
+    },
+    {
+      role: 'Junior Web Developer',
+      company: 'ZED Myanmar Company Limited',
+      period: 'September 2020 – November 2021 · Yangon',
+      description: 'Website features, production fixes, and release checks.',
+      achievements: [
+        'Developed and maintained website features and fixed defects on production web applications.',
+        'Implemented page and interface updates from team requirements and existing designs.',
+        'Participated in testing and release checks before changes were deployed.',
       ]
     }
   ];
@@ -35,7 +68,7 @@ const Experience = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Experience</h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            A journey of building impactful solutions and leading technical excellence.
+            Six years building web applications and internal enterprise systems, from ZED Myanmar to KBZ Bank.
           </p>
         </div>
 

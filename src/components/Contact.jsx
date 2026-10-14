@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MessageSquare, Send } from 'lucide-react';
+import { Mail, MessageSquare, Phone, Send } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Get in Touch</h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Interested in collaboration or have a technical challenge? Let's discuss.
+            Based in Yangon. Reach me by email, phone, or LinkedIn.
           </p>
         </div>
 
@@ -34,19 +34,31 @@ const Contact = () => {
 
             <div className="flex gap-4">
               <div className="p-3 rounded-xl bg-blue-600/10 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 shrink-0 h-fit">
+                <Phone size={24} />
+              </div>
+              <div>
+                <h4 className="font-bold mb-1 text-sm sm:text-base text-slate-900 dark:text-white">Phone</h4>
+                <a href="tel:+959402532566" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm sm:text-base">
+                  +95 9 402 532 566
+                </a>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="p-3 rounded-xl bg-blue-600/10 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 shrink-0 h-fit">
                 <MessageSquare size={24} />
               </div>
               <div>
                 <h4 className="font-bold mb-1 text-sm sm:text-base text-slate-900 dark:text-white">LinkedIn</h4>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm sm:text-base">
-                  linkedin.com/in/kaungminkhant
+                <a href="https://www.linkedin.com/in/kaung-min-khant-224b8b327" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm sm:text-base">
+                  linkedin.com/in/kaung-min-khant-224b8b327
                 </a>
               </div>
             </div>
 
             <div className="glass-card p-5 sm:p-6 rounded-2xl border-l-4 border-blue-600 dark:border-blue-500">
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 italic leading-relaxed">
-                "I'm always open to discussing architecture, system design, and high-scale applications."
+                "Full Stack Software Engineer with 6 years of experience building web applications and internal enterprise systems."
               </p>
             </div>
           </motion.div>

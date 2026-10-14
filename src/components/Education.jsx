@@ -6,13 +6,11 @@ const Education = () => {
   const education = [
     {
       degree: 'Graduate Diploma in Electronic Engineering',
-      institution: 'University of Engineering',
-      description: 'Focused on digital systems, embedded programming, and signal processing.'
+      institution: 'Government Technical Institute, Kyaukse',
     },
     {
-      degree: 'NCC Level 4 Diploma in Computing',
-      institution: 'NCC Education',
-      description: 'Foundational studies in computer science, algorithms, and software development.'
+      degree: 'Diploma in Computing (NCC Education Level 4)',
+      institution: 'KMD College',
     }
   ];
 
@@ -39,10 +37,7 @@ const Education = () => {
               </div>
               <div>
                 <h3 className="text-lg sm:text-xl font-bold mb-2 text-slate-900 dark:text-white">{edu.degree}</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-2 text-sm sm:text-base">{edu.institution}</p>
-                <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
-                  {edu.description}
-                </p>
+                <p className="text-blue-600 dark:text-blue-400 font-medium text-sm sm:text-base">{edu.institution}</p>
               </div>
             </motion.div>
           ))}
