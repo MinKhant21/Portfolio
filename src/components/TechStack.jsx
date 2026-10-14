@@ -3,18 +3,22 @@ import { motion } from 'framer-motion';
 
 const TechStack = () => {
   const technologies = [
+    { name: 'JavaScript', category: 'Language' },
+    { name: 'TypeScript', category: 'Language' },
     { name: 'PHP (Laravel)', category: 'Backend' },
-    { name: 'Java (Spring Boot)', category: 'Backend' },
-    { name: 'Node.js', category: 'Backend' },
+    { name: 'Node.js (Express)', category: 'Backend' },
     { name: 'React', category: 'Frontend' },
     { name: 'Vue.js', category: 'Frontend' },
-    { name: 'Docker', category: 'DevOps' },
+    { name: 'React Native', category: 'Frontend' },
+    { name: 'Tailwind CSS', category: 'Frontend' },
+    { name: 'MySQL', category: 'Database' },
+    { name: 'MongoDB', category: 'Database' },
+    { name: 'DynamoDB', category: 'Database' },
     { name: 'AWS', category: 'Cloud' },
-    { name: 'Kubernetes', category: 'DevOps' },
+    { name: 'Amazon Bedrock', category: 'Cloud' },
+    { name: 'Docker', category: 'DevOps' },
+    { name: 'CI/CD', category: 'DevOps' },
     { name: 'Microservices', category: 'Architecture' },
-    { name: 'Clean Architecture', category: 'Architecture' },
-    { name: 'TDD', category: 'Testing' },
-    { name: 'PostgreSQL', category: 'Database' },
   ];
 
   const container = {
@@ -38,7 +42,7 @@ const TechStack = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Tech Stack</h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            My diverse technical arsenal for building high-performance, scalable systems.
+            JavaScript, TypeScript, Node.js, React, Vue.js, PHP, Laravel, microservices, Docker, and AWS.
           </p>
         </div>
 

@@ -42,10 +42,10 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6">
             <ThemeToggle />
             <div className="flex items-center space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
+              <a href="https://github.com/MinKhant21" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/kaung-min-khant-224b8b327" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -83,10 +83,10 @@ const Navbar = () => {
                 </a>
             ))}
             <div className="flex items-center gap-6 px-3 pt-4 border-t border-slate-200 dark:border-white/5">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
+              <a href="https://github.com/MinKhant21" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/kaung-min-khant-224b8b327" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
                 <Linkedin size={24} />
               </a>
             </div>
